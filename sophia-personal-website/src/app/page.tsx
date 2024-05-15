@@ -9,7 +9,7 @@ export default function Home() {
       <Header />
       <div className="flex flex-col lg:flex-row items-center justify-between w-3/4 gap-4">
         <div className="text-center">
-          <h1 className="font-bold text-4xl md:text-5xl">
+          <h1 className="animate-typing overflow-hidden whitespace-nowrap font-bold text-4xl md:text-5xl">
             Hi, I'm <span className="text-pink-500">Sophia</span><span className="text-pink-500">!</span>
           </h1>
           <p className="mt-4 md:text-xl">
