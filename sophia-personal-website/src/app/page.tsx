@@ -26,7 +26,7 @@ export default function Home() {
           </div>
         </div>
         <div className="lg:w-1/2 justify-center lg:justify-end">
-          <Image src="/image-blob-1.png" alt="homepage blob" width={350} height={200} />
+          <Image src="/image-blob-1.png" alt="homepage blob" width={400} height={200} />
         </div>
       </div>
     </main>
