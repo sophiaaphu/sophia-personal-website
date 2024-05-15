@@ -1,11 +1,18 @@
 import Image from "next/image";
+import Header from "@/components/header";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-8 lg:p-24 gap-12 bg-[#FBD0DE]">
+    <main className="flex min-h-screen flex-col items-center gap-y-12  px-8 lg:px-24 bg-[#FBD0DE]">
+      <Header/>
       <div>
         <h1>
-          hi im sophia
+          hi i'm sophia
+        </h1>
+      </div>
+      <div>
+        <h1>
+          bruh
         </h1>
       </div>
     </main>
