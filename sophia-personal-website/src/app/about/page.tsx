@@ -7,7 +7,7 @@ export default function About() {
     <main className="flex min-h-screen flex-col items-center justify-between gap-y-12  px-8 lg:px-24 bg-[#FBD0DE]">
       <Header/>
       <div>
-        <h1>
+        <h1 className="font-bold text-3xl lg:text-4xl">
           About Me
         </h1>
       </div>
