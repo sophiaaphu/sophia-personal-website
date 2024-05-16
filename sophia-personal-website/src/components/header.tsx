@@ -36,7 +36,7 @@ export default function Header() {
 
   return (
     <header className="bg-[#FBD0DE] w-full">
-      <nav className="flex items-center justify-between p-4 w-full" aria-label="Global">
+      <nav className="flex items-center justify-between pt-4 w-full" aria-label="Global">
         <div className="flex justify-start">
           <a href="/" className="-m-1.5 p-1.5">
             <Image src='/sophia-phu-logo.png' alt="sophia logo" width={125} height={50} />
