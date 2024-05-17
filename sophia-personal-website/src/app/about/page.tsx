@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import Banner from "@/components/banner";
 import {
   Accordion,
   AccordionContent,
@@ -17,11 +18,9 @@ export default function About() {
         <h1 className="font-bold text-3xl lg:text-4xl">
           About Me
         </h1>
+        <Banner />
         <div className="flex flex-col lg:flex-row justify-center items-center gap-8">
-          <div className="flex justify-start">
-            <Image src="/image-blob-2.png" alt="about me blob" width={350} height={200} />
-          </div>
-          <div className="flex flex-col gap-4 lg:justify-end lg:w-2/3">
+          <div className="flex flex-col gap-4 lg:justify-end ">
             <div>
               <p>
                 If you’re reading this, welcome to my webpage! I’m Sophia, and I am from Houston Texas. I am pursuing a Bachelors of Science in Computer Engineering and a Minor in Mathematics at Texas A&M University.
@@ -117,7 +116,6 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div></div>
       <Footer />
     </main>
   );

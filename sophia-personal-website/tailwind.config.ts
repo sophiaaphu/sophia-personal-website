@@ -75,12 +75,27 @@ const config = {
           "50%": {
             borderColor: "transparent"
           },
-        }
+        },
+        "skew-scroll": {
+          "0%": {
+            transform:
+              "rotatex(13deg) rotateZ(-13deg) skewX(13deg) translateZ(0) translateY(110%)",
+          },
+          "95%": {
+            opacity: '100%',
+          },
+          "100%": {
+            transform:
+              "rotatex(13deg) rotateZ(-13deg) skewX(13deg) translateZ(0) translateY(-430%)",
+              opacity: '0%',
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        typing: "typing 4s steps(40, end), blink 0.75s step-end infinite"
+        typing: "typing 4s steps(40, end), blink 0.75s step-end infinite",
+        "skew-scroll": "skew-scroll 24s linear infinite",
       },
     },
   },
