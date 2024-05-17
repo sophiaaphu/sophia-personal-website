@@ -60,7 +60,7 @@ export default function Banner() {
         <div className="relative w-full overflow-hidden">
         <div className="mx-auto grid h-[450px] w-[300px] animate-skew-scroll grid-cols-1 gap-5 sm:w-[750px] sm:grid-cols-2">
           {cards.map((card, index) => (
-            <a key={index} target="_blank" rel="noopener noreferrer" className="cursor-pointer bg-[#FBD0DE] p-4 shadow-md hover:-translate-y-1 hover:scale-105 transition-transform">
+            <a key={index} target="_blank" rel="noopener noreferrer" className="cursor-pointer bg-[#FBD0DE] p-4 shadow-md rounded-md hover:-translate-y-1 hover:scale-105 transition-transform">
               <div className="flex flex-col items-center">
                 <Image
                   src={card.image}
