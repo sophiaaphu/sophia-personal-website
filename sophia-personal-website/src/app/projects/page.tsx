@@ -55,7 +55,7 @@ const [selectedProject, setSelectedProject] = useState(swipetern);
         View the work I created/contributed to! These projects include hackathon projects, Aggie Coding Club projects, and personal projects I was interested in creating. 
         </p>
         <div className="flex flex-col gap-8 lg:flex-row">
-          <div className=" bg-[#FEEDF5] rounded-2xl lg:w-1/2 drop-shadow-md">
+          <div className=" bg-[#FEEDF5] rounded-2xl lg:w-1/2 drop-shadow-md border border-black">
             <Image src={selectedProject.imagePath} alt={selectedProject.alt} width={2000} height={200} className=" rounded-t-2xl"/>
             <div className="p-8 flex flex-col gap-2">
               <h2 className=" font-bold text-2xl">
@@ -90,7 +90,7 @@ const [selectedProject, setSelectedProject] = useState(swipetern);
           <div className="flex lg:w-1/2 flex-col gap-4">
           <div className="flex gap-4">
             <div>
-              <div onClick={() => setSelectedProject(swipetern)} className=" bg-[#FEEDF5] rounded-2xl drop-shadow-md">
+              <div onClick={() => setSelectedProject(swipetern)} className=" bg-[#FEEDF5] rounded-2xl drop-shadow-md border border-black">
                 <Image src={swipetern.imagePath} alt={swipetern.alt} width={2000} height={200} className=" rounded-t-2xl"/>
                 <div className="p-4 flex flex-col gap-2">
                   <p className="font-bold text-xl">
@@ -113,7 +113,7 @@ const [selectedProject, setSelectedProject] = useState(swipetern);
               </div>
             </div>
             <div>
-              <div onClick={() => setSelectedProject(jkss)} className="bg-[#FEEDF5] rounded-2xl drop-shadow-md">
+              <div onClick={() => setSelectedProject(jkss)} className="bg-[#FEEDF5] rounded-2xl drop-shadow-md border border-black">
                 <Image src={jkss.imagePath} alt={jkss.alt} width={2000} height={200} className=" rounded-t-2xl"/>
                 <div className="p-4 flex flex-col gap-2">
                   <p className="font-bold text-xl">
@@ -138,7 +138,7 @@ const [selectedProject, setSelectedProject] = useState(swipetern);
           </div>
           <div className="flex gap-4">
             <div>
-              <div onClick={() => setSelectedProject(aggieSeek)} className=" bg-[#FEEDF5] rounded-2xl drop-shadow-md">
+              <div onClick={() => setSelectedProject(aggieSeek)} className=" bg-[#FEEDF5] rounded-2xl drop-shadow-md border border-black">
                 <Image src={aggieSeek.imagePath} alt={aggieSeek.alt} width={2000} height={200} className=" rounded-t-2xl"/>
                 <div className="p-4 flex flex-col gap-2">
                   <p className="font-bold text-xl">
@@ -161,7 +161,7 @@ const [selectedProject, setSelectedProject] = useState(swipetern);
               </div>
             </div>
             <div>
-              <div onClick={() => setSelectedProject(split)} className="bg-[#FEEDF5] rounded-2xl drop-shadow-md">
+              <div onClick={() => setSelectedProject(split)} className="bg-[#FEEDF5] rounded-2xl drop-shadow-md border border-black">
                 <Image src={split.imagePath} alt={split.imagePath} width={2000} height={200} className=" rounded-t-2xl"/>
                 <div className="p-4 flex flex-col gap-2">
                   <p className="font-bold text-xl">
