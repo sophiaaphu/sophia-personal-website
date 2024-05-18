@@ -14,6 +14,7 @@ export default function Projects() {
       imagePath: "/swipetern.png",
       alt:"swipetern",
       badges: ["React Native", "Cross Platform", "Expo", "Firebase"],
+      link:"https://github.com/obinnanprogrammed/tamuhack2024"
     };
   const jkss =
     {
@@ -22,6 +23,7 @@ export default function Projects() {
       imagePath: "/jkss.png",
       alt:"jkss",
       badges: ["React", "Web Application", "Flask", "PymuPDF"],
+      link:"https://github.com/sohilgoswami/jkss"
     };
   const aggieSeek =
     {
@@ -30,6 +32,7 @@ export default function Projects() {
       imagePath: "/aggie_seek.png",
       alt:"aggieSeek",
       badges: ["React", "Web Application", "Flask", "Beautiful Soup"],
+      link:"https://github.com/peterphann/aggieseek"
     };
   const split =
     {
@@ -38,6 +41,7 @@ export default function Projects() {
       imagePath: "/split.png",
       alt:"split",
       badges: ["React Native", "Cross Platform", "Expo", "Firebase"],
+      link:"https://github.com/Split-Project"
     };
 const [selectedProject, setSelectedProject] = useState(swipetern);
   return (
@@ -77,7 +81,7 @@ const [selectedProject, setSelectedProject] = useState(swipetern);
                 </p>
               </div>
               <div className="text-pink-500 hover:translate-y-2 duration-200">
-                <a>
+                <a href={selectedProject.link} target="_blank">
                   <RxGithubLogo className="w-6 h-6"/>
                 </a>
               </div>
@@ -101,7 +105,7 @@ const [selectedProject, setSelectedProject] = useState(swipetern);
                     </div>
                   </div>
                   <div className="text-pink-500 hover:translate-y-2 duration-200">
-                    <a>
+                    <a href={swipetern.link} target="_blank">
                       <RxGithubLogo className="w-6 h-6"/>
                     </a>
                   </div>
@@ -124,7 +128,7 @@ const [selectedProject, setSelectedProject] = useState(swipetern);
                     </div>
                   </div>
                   <div className="text-pink-500 hover:translate-y-2 duration-200">
-                  <a>
+                  <a href={jkss.link} target="_blank">
                     <RxGithubLogo className="w-6 h-6"/>
                   </a>
                   </div>
@@ -149,7 +153,7 @@ const [selectedProject, setSelectedProject] = useState(swipetern);
                     </div>
                   </div>
                   <div className="text-pink-500 hover:translate-y-2 duration-200">
-                    <a>
+                    <a href={aggieSeek.link} target="_blank">
                       <RxGithubLogo className="w-6 h-6"/>
                     </a>
                   </div>
@@ -172,7 +176,7 @@ const [selectedProject, setSelectedProject] = useState(swipetern);
                     </div>
                   </div>
                   <div className="text-pink-500 hover:translate-y-2 duration-200">
-                  <a>
+                  <a href={split.link} target="_blank">
                     <RxGithubLogo className="w-6 h-6"/>
                   </a>
                   </div>
