@@ -17,8 +17,8 @@ export default function Projects() {
     };
   const jkss =
     {
-      title: "JKSS",
-      description: "Description of JKSS project.",
+      title: "JKSS Grade Distributions",
+      description: "JKSS Grade Dristibutions is a webapp that allows Texas A&M students to view grade distributions for professors they are considering taking classes with. My teammates and I knew the importance of selecting good professors, and we thought that this app would benefit many students. This project was created during the HowdyHack hackathon. I worked on the frontend of the project, utilizing React and Material-UI to create a user friendly interface. I also worked on the backend, utilizing Flask and PyMuPDF to extract data from the TAMU grade distribution PDFs.",
       imagePath: "/jkss.png",
       alt:"jkss",
       badges: ["React", "Web Application", "Flask", "PymuPDF"],
@@ -26,7 +26,7 @@ export default function Projects() {
   const aggieSeek =
     {
       title: "AggieSeek",
-      description: "Description of AggieSeek project.",
+      description: "AggieSeek is a webapp that notifies students when courses at TAMU have open seats. My team and I had many struggles with our desired classes getting filled, so we wanted to create a solution. This project was part of the Aggie Coding Club project system. I worked on the frontend of the project, utilizing React, TailwindCSS, HeadlessUI, and ShadCN to create an aesthetic user interface. We utilized Flask, Beautiful Soup, and the Twilio API for the backend to scrape data from the TAMU course catalog and notify students through email, text, and discord. Firebase was used dor authentification and data storage.",
       imagePath: "/aggie_seek.png",
       alt:"aggieSeek",
       badges: ["React", "Web Application", "Flask", "Beautiful Soup"],
@@ -34,7 +34,7 @@ export default function Projects() {
   const split =
     {
       title: "Sp/it",
-      description: "Description of Sp/it project.",
+      description: "Split is a roomate companion application that allows roomates to split bills and keep track of expenses, create tasks through a task calender, chat, and track roomate locations. My team and I wanted to create an app that would make it easier for roomates to be able to have an easier time staying organized and managing expenses. This project was also part of the Aggie Coding Club project system. I worked on the frontend of the project, utilizing React Native to create a user centered cross platform application. I also leveraged Firebase to store user data and manage user authentification.",
       imagePath: "/split.png",
       alt:"split",
       badges: ["React Native", "Cross Platform", "Expo", "Firebase"],
