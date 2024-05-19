@@ -38,7 +38,7 @@ export default function About() {
             </div>
             <div>
               <p>
-                I am open to internships and co ops for summer 2025. Feel free to contact me.
+                I am open to internships and co ops for summer 2025. Feel free to <a className="text-pink-500 hover:underline" href="/contact"> contact me</a>.
               </p>
             </div>
           </div>
