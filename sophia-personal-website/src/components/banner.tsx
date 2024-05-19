@@ -5,52 +5,52 @@ export default function Banner() {
         {
           title: "TamuHackX",
           imagealt: "TamuHack 2024",
-          image: "/tamuhack.jpg", // Adjust according to your public folder path
+          image: "/tamuhack.png", // Adjust according to your public folder path
         },
         {
           title: "Senior Trip",
           imagealt: "Senior Trip",
-          image: "/senior_trip.jpg", // Adjust according to your public folder path
+          image: "/senior_trip.png", // Adjust according to your public folder path
         },
         {
             title: "Graduation",
             imagealt: "Graduation",
-            image: "/graduation.jpeg", // Adjust according to your public folder path
+            image: "/graduation.png", // Adjust according to your public folder path
         },
         {
             title: "Disney Trip",
             imagealt: "Disney",
-            image: "/disney_world.jpg", // Adjust according to your public folder path
+            image: "/disney_world.png", // Adjust according to your public folder path
         },
         {
           title: "Prom",
           imagealt: "Prom 2024",
-          image: "/prom_group.jpg", // Adjust according to your public folder path
+          image: "/prom_group.png", // Adjust according to your public folder path
         },
         {
             title: "Prom",
             imagealt: "Prom Photo 2",
-            image: "/prom_small_group.jpg", // Adjust according to your public folder path
+            image: "/prom_small_group.png", // Adjust according to your public folder path
         },
         {
             title: "Homecoming",
             imagealt: "Hoco 2024",
-            image: "/hoco_group.jpg", // Adjust according to your public folder path
+            image: "/hoco_group.png", // Adjust according to your public folder path
         },
         {
             title: "Homecoming",
             imagealt: "Hoco 2024",
-            image: "/hoco_small_group.jpg", // Adjust according to your public folder path
+            image: "/hoco_small_group.png", // Adjust according to your public folder path
         },
         {
             title: "State Solo and Ensemble",
             imagealt: "State s&e",
-            image: "/state_se.jpg", // Adjust according to your public folder path
+            image: "/state_se.png", // Adjust according to your public folder path
         },
         {
             title: "JPMC Internship",
             imagealt: "Hoco 2024",
-            image: "/JPMC_Internship.jpg", // Adjust according to your public folder path
+            image: "/JPMC_Internship.png", // Adjust according to your public folder path
         },
         // Repeat other card objects as needed
     ];
