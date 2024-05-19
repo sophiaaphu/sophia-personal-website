@@ -3,14 +3,14 @@ import Image from "next/image";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import emailjs from "@emailjs/browser";
-import { useState } from "react";
+import { useState, FormEvent } from "react";
 
 export default function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
-  const sendEmail = (e) => {
+  const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID;
     const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID;
