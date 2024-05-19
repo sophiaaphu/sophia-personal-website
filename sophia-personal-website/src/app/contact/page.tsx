@@ -12,9 +12,9 @@ export default function Contact() {
   const [message, setMessage] = useState("");
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID;
-    const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID;
-    const publicKey = process.env.NEXT_PUBLIC_PUBLIC_KEY;
+    const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID as string;
+    const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID as string;
+    const publicKey = process.env.NEXT_PUBLIC_PUBLIC_KEY as string;
     const templateParams = {
       name: name,
       email: email,
