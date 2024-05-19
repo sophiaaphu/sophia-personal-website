@@ -30,7 +30,7 @@ export default function Home() {
           <Image src="/image-blob-1.png" alt="homepage blob" width={350} height={200} />
         </div>
       </div>
-      <div className="hidden md:flex">  
+      <div>  
       </div>
       <Footer />
     </main>

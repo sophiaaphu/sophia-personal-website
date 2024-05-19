@@ -3,6 +3,7 @@ import Image from "next/image";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import emailjs from "@emailjs/browser";
+import { Button } from "@/components/ui/button";
 import { useState, FormEvent } from "react";
 
 export default function Contact() {
@@ -49,22 +50,22 @@ export default function Contact() {
           <form onSubmit={sendEmail} className="flex flex-col gap-4 p-8">
             <div className="flex flex-col gap-1">
             <label htmlFor="name">Name</label>
-            <input type="text" placeholder= "Name" value={name} id="name" name="name" className="rounded-xl p-2" required onChange={(e) => setName(e.target.value)}/>
+            <input type="text" placeholder= "Name" value={name} id="name" name="name" className="rounded-xl p-2 drop-shadow-md " required onChange={(e) => setName(e.target.value)}/>
             </div>
             <div className="flex flex-col gap-1">
             <label htmlFor="email">Email</label>
-            <input type="email" placeholder= "Email" value = {email} id="email" name="email" className="rounded-xl p-2" required onChange={(e) => setEmail(e.target.value)}/>
+            <input type="email" placeholder= "Email" value = {email} id="email" name="email" className="rounded-xl p-2 drop-shadow-md " required onChange={(e) => setEmail(e.target.value)}/>
             </div>
             <div className="flex flex-col gap-1">
             <label htmlFor="subject">Subject</label>
-            <input type="subject" placeholder= "Subject" value = {subject} id="subject" name="subject" className="rounded-xl p-2" required onChange={(e) => setSubject(e.target.value)}/>
+            <input type="subject" placeholder= "Subject" value = {subject} id="subject" name="subject" className="rounded-xl p-2 drop-shadow-md " required onChange={(e) => setSubject(e.target.value)}/>
             </div>
             <div className="flex flex-col gap-1">
             <label htmlFor="message">Message</label>
-            <textarea id="message" placeholder= "Message" rows={4} value = {message} name="message" className="rounded-xl p-2" required onChange={(e) => setMessage(e.target.value)}/>
+            <textarea id="message" placeholder= "Message" rows={4} value = {message} name="message" className="rounded-xl p-2 drop-shadow-md " required onChange={(e) => setMessage(e.target.value)}/>
             </div>
             <div className="flex flex-col items-center gap-1">
-            <button type="submit" className="bg-[#FBD0DE] rounded-xl p-2 w-1/2 lg:w-1/3">Submit</button>
+            <Button type="submit" className="bg-[#FBD0DE] rounded-xl p-2 w-1/2 lg:w-1/3 drop-shadow-md text-black hover:bg-[#FEEDF5]">Submit</Button>
             </div>
           </form>
         </div>
