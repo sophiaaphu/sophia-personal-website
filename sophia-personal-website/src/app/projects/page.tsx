@@ -37,7 +37,7 @@ export default function Projects() {
   const split =
     {
       title: "Sp/it",
-      description: "Split is a roomate companion application that allows roomates to split bills and keep track of expenses, create tasks through a task calender, chat, and track roomate locations. My team and I wanted to create an app that would make it easier for roomates to be able to have an easier time staying organized and managing expenses. This project was also part of the Aggie Coding Club project system. I worked on the frontend of the project, utilizing React Native to create a user centered cross platform application. I also leveraged Firebase to store user data and manage user authentification.",
+      description: "Sp/it is a roomate companion application that allows roomates to split bills and keep track of expenses, create tasks through a task calender, chat, and track roomate locations. My team and I wanted to create an app that would make it easier for roomates to be able to have an easier time staying organized and managing expenses. This project was also part of the Aggie Coding Club project system. I worked on the frontend of the project, utilizing React Native to create a user centered cross platform application. I also leveraged Firebase to store user data and manage user authentification.",
       imagePath: "/split.png",
       alt:"split",
       badges: ["React Native", "Cross Platform", "Expo", "Firebase"],
