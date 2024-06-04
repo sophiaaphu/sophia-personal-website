@@ -80,7 +80,7 @@ export default function About() {
                 </div>
                 <div>
                   <p>
-                    Frontend Developer and UI Designer for the AggieSeek Project Team
+                    Software Developer and UI Designer for the AggieSeek Project Team
                   </p>
                   <p className=" text-pink-500">
                     January 2024 - Present
