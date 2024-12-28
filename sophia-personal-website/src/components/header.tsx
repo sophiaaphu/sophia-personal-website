@@ -35,7 +35,7 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-[#FBD0DE] w-full">
+    <header className="w-full">
       <nav className="flex items-center justify-between pt-4 w-full" aria-label="Global">
         <div className="flex justify-start">
           <a href="/" className="-m-1.5 p-1.5">
@@ -51,9 +51,9 @@ export default function Header() {
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
-                <NavigationMenuTrigger>About</NavigationMenuTrigger>
+                <NavigationMenuTrigger >About</NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <ul className="bg-[#FBD0DE] grid w-[200px] gap-3 p-4 md:w-[250px] md:grid-cols-1 lg:w-[300px]">
+                  <ul className="bg-[#FFDCE8] grid w-[200px] gap-3 p-4 md:w-[250px] md:grid-cols-1 lg:w-[300px]">
                     {components.map((component) => (
                       <ListItem key={component.title} title={component.title} href={component.href}>
                         {component.description}
