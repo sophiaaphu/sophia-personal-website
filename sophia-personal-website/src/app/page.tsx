@@ -1,39 +1,38 @@
 import Image from "next/image";
-import Header from "@/components/header";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import Footer from "@/components/footer";
-import { Typewriter } from "@/components/ui/typewriter";
+import { hello } from "./fonts";
+import { RxInstagramLogo, RxGithubLogo, RxLinkedinLogo,RxHeart  } from "react-icons/rx";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between gap-y-12 px-8 lg:px-24 bg-[#FBD0DE]">
-      <Header />
-      <div className="flex flex-col lg:flex-row justify-center items-center gap-4">
-        <div className="text-center">
-          <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl">
-            <Typewriter texts={["Hi I'm Sophia!"]} delay = {1}/>
+    <main className="">
+      <div>
+        <div className="flex flex-col gap-6">
+          <h1 className=" text-4xl font-bold">
+            Hi I'm <span className=" font-normal" style={hello.style}>Sophia</span>, software developer and computer engineer
           </h1>
-          <p className="mt-4 md:text-xl">
-            an aspiring computer engineer and software developer
+          <p className=" text-base">
+            I enjoy creating projects that are aesthetic, user centered, and positively impact my community.
           </p>
-          <div className="mt-4 flex justify-center ">
-            <Button className="bg-[#FEEDF5] drop-shadow-md rounded-3xl w-full lg:w-2/3 hover:bg-white">
-              <Link href="/about">
-                <span className="text-black md:text-lg">
-                  Learn more about me :)
-                </span>
-              </Link>
+          <div className="flex items-center gap-6">
+            <Button className=" bg-[#FEEDF5] text-black hover:bg-[#F986B0]">
+              Learn more about me
             </Button>
+            <div className="flex space-x-4 text-pink-500 ">
+              <a href="https://www.instagram.com/sophiaaphu._/" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                <RxInstagramLogo className="w-5 h-5" />
+              </a>
+              <a href="https://github.com/sophiaaphu" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                <RxGithubLogo className="w-5 h-5"  />
+              </a>
+              <a href="https://www.linkedin.com/in/sophiaphu/" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                <RxLinkedinLogo className="w-5 h-5"  />
+              </a>
+            </div>
           </div>
         </div>
-        <div className="justify-center lg:justify-end">
-          <Image src="/image-blob-1.png" alt="homepage blob" width={350} height={200} />
-        </div>
       </div>
-      <div>  
-      </div>
-      <Footer />
     </main>
   );
 }
