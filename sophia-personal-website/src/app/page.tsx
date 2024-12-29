@@ -9,6 +9,12 @@ import {
   RxHeart,
   RxArrowRight,
 } from "react-icons/rx";
+import {
+  RiPencilFill,
+  RiTerminalBoxFill,
+  RiPushpin2Fill,
+  RiFolder5Fill,
+} from "react-icons/ri";
 
 export default function Home() {
   return (
@@ -164,10 +170,37 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div>
+      <div className="mt-8">
         <p className="text-3xl lg:text-4xl font-bold">Updates</p>
-        <div>
-          <p>whoo</p>
+        <div className=" mt-4 flex flex-col gap-2">
+          <div className="flex justify-between bg-[#FEEDF5] p-4 rounded-lg shadow-md">
+            <div className="flex items-center gap-2">
+              <RiPencilFill />
+              <p>Released AggieSeek</p>
+            </div>
+            <p>November 2024</p>
+          </div>
+          <div className="flex justify-between bg-[#FEEDF5] p-4 rounded-lg shadow-md">
+            <div className="flex items-center gap-2">
+              <RiTerminalBoxFill />
+              <p>Went to JPMC Code for Good</p>
+            </div>
+            <p>October 2024</p>
+          </div>
+          <div className="flex justify-between bg-[#FEEDF5] p-4 rounded-lg shadow-md">
+            <div className="flex items-center gap-2">
+              <RiPushpin2Fill />
+              <p>Became president of the ENGR TA Organization</p>
+            </div>
+            <p>September 2024</p>
+          </div>
+          <div className="flex justify-between bg-[#FEEDF5] p-4 rounded-lg shadow-md">
+            <div className="flex items-center gap-2">
+              <RiTerminalBoxFill />
+              <p>Became a TA for CSCE 120</p>
+            </div>
+            <p>August 2024</p>
+          </div>
         </div>
       </div>
     </main>
