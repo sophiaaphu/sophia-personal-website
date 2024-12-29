@@ -166,6 +166,9 @@ export default function Home() {
       </div>
       <div>
         <p className="text-3xl lg:text-4xl font-bold">Updates</p>
+        <div>
+          <p>whoo</p>
+        </div>
       </div>
     </main>
   );
