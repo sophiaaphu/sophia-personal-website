@@ -7,15 +7,8 @@ import {
   RxInstagramLogo,
   RxGithubLogo,
   RxLinkedinLogo,
-  RxHeart,
   RxArrowRight,
 } from "react-icons/rx";
-import {
-  RiPencilFill,
-  RiTerminalBoxFill,
-  RiPushpin2Fill,
-  RiFolder5Fill,
-} from "react-icons/ri";
 
 export default function Home() {
   return (
