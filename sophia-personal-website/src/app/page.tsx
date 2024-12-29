@@ -73,7 +73,7 @@ export default function Home() {
           />
         </div>
       </div>
-      <div>
+      <div className="mt-8 lg:mt-0">
         <p className="text-3xl lg:text-4xl font-bold">Featured</p>
         <div className="mt-4 flex flex-col lg:flex-row gap-2">
           <div className="flex flex-col bg-[#FEEDF5] p-4 md:p-8 rounded-lg lg:w-1/3 justify-between shadow-md">
@@ -173,33 +173,33 @@ export default function Home() {
       <div className="mt-8">
         <p className="text-3xl lg:text-4xl font-bold">Updates</p>
         <div className=" mt-4 flex flex-col gap-2">
-          <div className="flex justify-between bg-[#FEEDF5] p-4 rounded-lg shadow-md">
+          <div className="flex justify-between bg-[#FEEDF5] p-4 rounded-lg shadow-md hover:-translate-y-1 duration-200">
             <div className="flex items-center gap-2">
               <RiPencilFill />
-              <p>Released AggieSeek</p>
+              <p className=" text-sm md:text-base">Released AggieSeek</p>
             </div>
-            <p>November 2024</p>
+            <p className="hidden md:block">November 2024</p>
           </div>
-          <div className="flex justify-between bg-[#FEEDF5] p-4 rounded-lg shadow-md">
+          <div className="flex justify-between bg-[#FEEDF5] p-4 rounded-lg shadow-md hover:-translate-y-1 duration-200">
             <div className="flex items-center gap-2">
               <RiTerminalBoxFill />
-              <p>Went to JPMC Code for Good</p>
+              <p className=" text-sm md:text-base">Went to JPMC Code for Good</p>
             </div>
-            <p>October 2024</p>
+            <p className="hidden md:block">October 2024</p>
           </div>
-          <div className="flex justify-between bg-[#FEEDF5] p-4 rounded-lg shadow-md">
+          <div className="flex justify-between bg-[#FEEDF5] p-4 rounded-lg shadow-md hover:-translate-y-1 duration-200">
             <div className="flex items-center gap-2">
-              <RiPushpin2Fill />
-              <p>Became president of the ENGR TA Organization</p>
+              <RiPushpin2Fill className="flex-shrink-0" />
+              <p className=" text-sm md:text-base">Became president of the ENGR TAO</p>
             </div>
-            <p>September 2024</p>
+            <p className="hidden md:block">September 2024</p>
           </div>
-          <div className="flex justify-between bg-[#FEEDF5] p-4 rounded-lg shadow-md">
+          <div className="flex justify-between bg-[#FEEDF5] p-4 rounded-lg shadow-md hover:-translate-y-1 duration-200">
             <div className="flex items-center gap-2">
               <RiTerminalBoxFill />
-              <p>Became a TA for CSCE 120</p>
+              <p className=" text-sm md:text-base">Became a TA for CSCE 120</p>
             </div>
-            <p>August 2024</p>
+            <p className="hidden md:block">August 2024</p>
           </div>
         </div>
       </div>
