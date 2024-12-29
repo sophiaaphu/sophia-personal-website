@@ -67,18 +67,17 @@ export default function Home() {
         </div>
       </div>
       <div>
-        <p className="text-3xl lg:text-4xl font-bold">
-          Featured
-        </p>
-        <div className="mt-4">
-          <div className="flex flex-col bg-[#FEEDF5] p-8 rounded-lg">
+        <p className="text-3xl lg:text-4xl font-bold">Featured</p>
+        <div className="mt-4 flex gap-2">
+          <div className="flex flex-col bg-[#FEEDF5] p-8 rounded-lg w-1/3 justify-between shadow-md">
             <div className=" space-y-4">
-            <p className="text-lg font-semibold">
-              AggieSeek
-            </p>
-            <p className=" text-sm">
-              AggieSeek is an application that notifies Texas A&M students when classes open up. It allows students to get into classes that may be extremely difficult to get into otherwise and has 1000+ users. 
-            </p>
+              <p className="text-lg font-semibold">AggieSeek</p>
+              <p className=" text-sm">
+                AggieSeek is an application that notifies Texas A&M students
+                when classes open up. It allows students to get into classes
+                that may be extremely difficult to get into otherwise and has
+                1000+ users.
+              </p>
             </div>
             <div>
               <Button className="bg-[#FEEDF5] text-black border border-[#ABABAB] hover:bg-[#FFDCE8]">
@@ -86,12 +85,65 @@ export default function Home() {
               </Button>
             </div>
           </div>
+          <div className="flex gap-8 bg-[#DAB6BC] px-8 rounded-lg w-2/3 shadow-md pt-8">
+            <div className="flex items-end">
+              <Image
+                src="/aggie-seek-new-1.png"
+                alt="aggie seek 1"
+                width={450}
+                height={400}
+                className=" rounded-t-lg"
+              />
+            </div>
+            <div className="flex items-end">
+              <Image
+                src="/aggie-seek-new-2.png"
+                alt="aggie seek 2"
+                width={450}
+                height={400}
+                className=" rounded-t-lg"
+              />
+            </div>
+          </div>
+        </div>
+        <div className="mt-2 flex gap-2">
+          <div className="flex gap-8 bg-[#DAB6BC] px-8 rounded-lg w-2/3 shadow-md pt-8">
+            <div className="flex items-end">
+              <Image
+                src="/tao-website-1.png"
+                alt="tao website 1"
+                width={450}
+                height={400}
+                className=" rounded-t-lg"
+              />
+            </div>
+            <div className="flex items-end">
+              <Image
+                src="/tao-website-2.png"
+                alt="tao website 2"
+                width={450}
+                height={400}
+                className=" rounded-t-lg"
+              />
+            </div>
+          </div>
+          <div className="flex flex-col bg-[#FEEDF5] p-8 rounded-lg w-1/3 justify-between shadow-md">
+            <div className=" space-y-4">
+              <p className="text-lg font-semibold">TAO Website</p>
+              <p className=" text-sm">
+                The TAO website displays essential resources for 4000+ freshman engineers going through intro engineering coursework. It displays TAO events and announcements, TAO social media links, and review materials. 
+              </p>
+            </div>
+            <div>
+              <Button className="bg-[#FEEDF5] text-black border border-[#ABABAB] hover:bg-[#FFDCE8]">
+                Visit the TAO Website
+              </Button>
+            </div>
+          </div>
         </div>
       </div>
       <div>
-        <p className="text-3xl lg:text-4xl font-bold">
-          Updates
-        </p>
+        <p className="text-3xl lg:text-4xl font-bold">Updates</p>
       </div>
     </main>
   );
