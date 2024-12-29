@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { hello } from "./fonts";
+import EventList from "@/components/eventList";
 import {
   RxInstagramLogo,
   RxGithubLogo,
@@ -171,37 +172,8 @@ export default function Home() {
         </div>
       </div>
       <div className="mt-8">
-        <p className="text-3xl lg:text-4xl font-bold">Updates</p>
-        <div className=" mt-4 flex flex-col gap-2">
-          <div className="flex justify-between bg-[#FEEDF5] p-4 rounded-lg shadow-md hover:-translate-y-1 duration-200">
-            <div className="flex items-center gap-2">
-              <RiPencilFill />
-              <p className=" text-sm md:text-base">Released AggieSeek</p>
-            </div>
-            <p className="hidden md:block">November 2024</p>
-          </div>
-          <div className="flex justify-between bg-[#FEEDF5] p-4 rounded-lg shadow-md hover:-translate-y-1 duration-200">
-            <div className="flex items-center gap-2">
-              <RiTerminalBoxFill />
-              <p className=" text-sm md:text-base">Went to JPMC Code for Good</p>
-            </div>
-            <p className="hidden md:block">October 2024</p>
-          </div>
-          <div className="flex justify-between bg-[#FEEDF5] p-4 rounded-lg shadow-md hover:-translate-y-1 duration-200">
-            <div className="flex items-center gap-2">
-              <RiPushpin2Fill className="flex-shrink-0" />
-              <p className=" text-sm md:text-base">Became president of the ENGR TAO</p>
-            </div>
-            <p className="hidden md:block">September 2024</p>
-          </div>
-          <div className="flex justify-between bg-[#FEEDF5] p-4 rounded-lg shadow-md hover:-translate-y-1 duration-200">
-            <div className="flex items-center gap-2">
-              <RiFolder5Fill />
-              <p className=" text-sm md:text-base">Became a TA for CSCE 120</p>
-            </div>
-            <p className="hidden md:block">August 2024</p>
-          </div>
-        </div>
+        <p className="text-3xl lg:text-4xl font-bold mb-4">Updates</p>
+        <EventList/>
       </div>
     </main>
   );
