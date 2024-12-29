@@ -196,7 +196,7 @@ export default function Home() {
           </div>
           <div className="flex justify-between bg-[#FEEDF5] p-4 rounded-lg shadow-md hover:-translate-y-1 duration-200">
             <div className="flex items-center gap-2">
-              <RiTerminalBoxFill />
+              <RiFolder5Fill />
               <p className=" text-sm md:text-base">Became a TA for CSCE 120</p>
             </div>
             <p className="hidden md:block">August 2024</p>
