@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import { RxGithubLogo } from "react-icons/rx";
@@ -7,25 +7,37 @@ import { RxArrowRight } from "react-icons/rx";
 import { useState } from "react";
 
 export default function Projects() {
-  const [bannerImage, setBannerImage] = useState("/actual-aggie-seek-banner.png");
+  const [bannerImage, setBannerImage] = useState(
+    "/actual-aggie-seek-banner.png"
+  );
   return (
     <main className="flex flex-col py-12 gap-4">
       <div className=" flex flex-col gap-4 ">
         <h1 className="font-bold text-3xl lg:text-4xl">Projects</h1>
         <div className="bg-[#B07689] md:h-[23.5rem] -mx-8 lg:-mx-24 pl-8 lg:pl-24 gap-4 flex justify-between group overflow-hidden">
           <div>
-            <h1 className="mt-6 lg:mt-16 font-bold text-4xl lg:text-5xl text-white">Featured Work</h1>
+            <h1 className="mt-6 lg:mt-16 font-bold text-4xl lg:text-5xl text-white">
+              Featured Work
+            </h1>
             <div className="mt-4 lg:mt-8 text-white">
-              <p className=" text-sm md:text-base">View the work I created/contributed to!</p>
+              <p className=" text-sm md:text-base">
+                View the work I created/contributed to!
+              </p>
               <p className=" text-base lg:mt-2 hidden lg:block">
-                Hackathon projects, Aggie Coding Club Projects, personal projects,
-                and more!
+                Hackathon projects, Aggie Coding Club Projects, personal
+                projects, and more!
               </p>
             </div>
-            <Badge className=" lg:px-6 mt-4 mb-6 lg:mt-8 bg-[#FFDCE8] text-black font-normal space-x-2 hover:space-x-6 hover:bg-[#FEEDF5] shadow-md">
-              <p className=" text-sm md:text-base">My Github</p>
-              <RxArrowRight className=" size-5"/>
-            </Badge>
+            <a
+              href="https://github.com/sophiaaphu"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Badge className=" lg:px-6 mt-4 mb-6 lg:mt-8 bg-[#FFDCE8] text-black font-normal space-x-2 hover:space-x-6 hover:bg-[#FEEDF5] shadow-md ">
+                <p className=" text-sm md:text-base">My Github</p>
+                <RxArrowRight className=" size-5" />
+              </Badge>
+            </a>
           </div>
           <Image
             src={bannerImage}
@@ -36,8 +48,14 @@ export default function Projects() {
           />
         </div>
         <div className="flex gap-2 justify-center -mt-2">
-          <div className=" bg-[#B07689] h-2 w-8 rounded hover:w-12 hover:bg-[#E3A0BA]" onClick={() => setBannerImage("/actual-aggie-seek-banner.png")}></div>
-          <div className=" bg-[#B07689] h-2 w-8 rounded hover:w-12 hover:bg-[#E3A0BA]" onClick={() => setBannerImage("/tao-banner.png")}></div>
+          <div
+            className=" bg-[#B07689] h-2 w-8 rounded hover:w-12 hover:bg-[#E3A0BA]"
+            onClick={() => setBannerImage("/actual-aggie-seek-banner.png")}
+          ></div>
+          <div
+            className=" bg-[#B07689] h-2 w-8 rounded hover:w-12 hover:bg-[#E3A0BA]"
+            onClick={() => setBannerImage("/tao-banner.png")}
+          ></div>
         </div>
       </div>
       <div className="flex flex-col gap-4 pb-8">
@@ -53,12 +71,18 @@ export default function Projects() {
               </p>
             </div>
             <div className=" flex items-center gap-4 mt-8 lg:mt-0">
-              <Button className="bg-[#FEEDF5] text-black border border-[#ABABAB] hover:bg-[#FFDCE8] space-x-2 hover:space-x-6 ">
-                <p>Visit AggieSeek</p>
-                <RxArrowRight />
-              </Button>
               <a
-                href="https://github.com/sophiaaphu"
+                href="https://new.aggieseek.net/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button className="bg-[#FEEDF5] text-black border border-[#ABABAB] hover:bg-[#FFDCE8] space-x-2 hover:space-x-6 ">
+                  <p>Visit AggieSeek</p>
+                  <RxArrowRight />
+                </Button>
+              </a>
+              <a
+                href="https://github.com/aggieseek/aggieseek"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline"
@@ -100,12 +124,18 @@ export default function Projects() {
               </p>
             </div>
             <div className=" flex items-center gap-4 mt-8 lg:mt-0">
-              <Button className="bg-[#FEEDF5] text-black border border-[#ABABAB] hover:bg-[#FFDCE8] space-x-2 hover:space-x-6">
-                <p>Visit TAO Website</p>
-                <RxArrowRight />
-              </Button>
               <a
-                href="https://github.com/sophiaaphu"
+                href="https://engrtao.tech/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button className="bg-[#FEEDF5] text-black border border-[#ABABAB] hover:bg-[#FFDCE8] space-x-2 hover:space-x-6">
+                  <p>Visit TAO Website</p>
+                  <RxArrowRight />
+                </Button>
+              </a>
+              <a
+                href="https://github.com/TAO-ENGR/club-website"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline"
@@ -147,12 +177,18 @@ export default function Projects() {
               </p>
             </div>
             <div className=" flex items-center gap-4 mt-8 lg:mt-0">
-              <Button className="bg-[#FEEDF5] text-black border border-[#ABABAB] hover:bg-[#FFDCE8] space-x-2 hover:space-x-6 ">
-                <p>Visit SwipeTern</p>
-                <RxArrowRight />
-              </Button>
               <a
-                href="https://github.com/sophiaaphu"
+                href="https://devpost.com/software/lalala-kzb9fw"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button className="bg-[#FEEDF5] text-black border border-[#ABABAB] hover:bg-[#FFDCE8] space-x-2 hover:space-x-6 ">
+                  <p>Visit SwipeTern</p>
+                  <RxArrowRight />
+                </Button>
+              </a>
+              <a
+                href="https://github.com/obinnanprogrammed/tamuhack2024"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline"
