@@ -7,7 +7,7 @@ import { RxArrowRight } from "react-icons/rx";
 export default function Projects() {
   return (
     <main className="flex flex-col py-12 gap-4">
-      <div className=" flex flex-col gap-8 ">
+      <div className=" flex flex-col gap-4 ">
         <h1 className="font-bold text-3xl lg:text-4xl">Projects</h1>
         <div className="bg-[#B07689] md:h-[23.5rem] -mx-8 lg:-mx-24 pl-8 lg:pl-24 gap-4 flex justify-between group overflow-hidden">
           <div>
@@ -29,12 +29,12 @@ export default function Projects() {
             alt="aggie seek banner"
             width={600}
             height={600}
-            className="transform transition-transform duration-300 group-hover:scale-105"
+            className="transform transition-transform duration-300 group-hover:scale-105 "
           />
         </div>
       </div>
       <div className="flex flex-col gap-4">
-        <div className="mt-4 flex flex-col lg:flex-row gap-2">
+        <div className="mt-2 flex flex-col lg:flex-row gap-2">
           <div className="flex flex-col bg-[#FEEDF5] p-4 md:p-8 rounded-lg lg:w-1/3 justify-between shadow-md">
             <div className=" space-y-4">
               <p className="text-lg font-semibold">AggieSeek</p>
