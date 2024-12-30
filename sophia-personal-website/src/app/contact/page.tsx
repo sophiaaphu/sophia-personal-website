@@ -46,7 +46,7 @@ export default function Contact() {
       <div className="flex flex-col gap-4">
         <h1 className="font-bold text-3xl lg:text-4xl">Contact Me</h1>
         <div>
-          <p className=" text-small md:text-base">
+          <p className=" text-sm md:text-base">
             If you want to contact me, feel free to email me at
             sophiatiffphu@gmail.com or message me on LinkedIn. However, for
             your convenience, you can also message me right here!
