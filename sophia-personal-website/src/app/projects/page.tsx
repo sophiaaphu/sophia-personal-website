@@ -29,7 +29,7 @@ export default function Projects() {
             alt="aggie seek 1"
             width={600}
             height={600}
-            className=" mt-8 sm:mt-0 transform transition-transform duration-300 group-hover:scale-105"
+            className=" object-fill sm:mt-0 transform transition-transform duration-300 group-hover:scale-105"
           />
         </div>
       </div>
