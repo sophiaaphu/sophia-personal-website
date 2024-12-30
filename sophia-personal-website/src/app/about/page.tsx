@@ -1,10 +1,4 @@
 import Banner from "@/components/banner";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import UpToList from "@/components/upToList";
 
 export default function About() {
