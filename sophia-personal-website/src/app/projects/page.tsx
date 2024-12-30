@@ -29,7 +29,6 @@ export default function Projects() {
             alt="aggie seek 1"
             width={600}
             height={600}
-            className=""
           />
         </div>
       </div>
