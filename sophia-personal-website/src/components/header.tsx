@@ -95,7 +95,7 @@ export default function Header() {
         <a href="/about" className="block px-4 py-2 text-gray-700" onClick={toggleDrawer}>About</a>
       </div>
       <div className="text-right hover:underline duration-200">
-        <a href="/resume" className="block px-4 py-2 text-gray-700" onClick={toggleDrawer}>Resume</a>
+        <a href="https://drive.google.com/file/d/1l_ZYUjVsBTHMnOFywGmIeic6DmtWhvG_/preview" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-gray-700" onClick={toggleDrawer}>Resume</a>
       </div>
       <div className="text-right hover:underline duration-200">
         <a href="/projects" className="block px-4 py-2 text-gray-700" onClick={toggleDrawer}>Projects</a>
