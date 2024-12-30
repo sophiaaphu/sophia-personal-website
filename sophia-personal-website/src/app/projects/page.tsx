@@ -6,9 +6,32 @@ import { RxArrowRight } from "react-icons/rx";
 
 export default function Projects() {
   return (
-    <main className="flex flex-col py-12 gap-16">
-      <div>
+    <main className="flex flex-col py-12 gap-4">
+      <div className=" flex flex-col gap-8 ">
         <h1 className="font-bold text-3xl lg:text-4xl">Projects</h1>
+        <div className="bg-[#B07689] md:h-[23.5rem] -mx-8 lg:-mx-24 pl-8 lg:pl-24 gap-4 flex justify-between overflow-hidden">
+          <div>
+            <h1 className="mt-8 lg:mt-16 font-bold text-4xl lg:text-5xl text-white">Featured Work</h1>
+            <div className="mt-4 lg:mt-8 text-white">
+              <p className=" text-base lg:text-lg">View the work I created/contributed to!</p>
+              <p className=" text-base lg:text-lg hidden lg:block">
+                Hackathon projects, Aggie Coding Club Projects, personal projects,
+                and more!
+              </p>
+            </div>
+            <Badge className=" lg:px-6 mt-4 mb-8 lg:mt-8 bg-[#FFDCE8] text-black font-normal space-x-2 hover:space-x-6 hover:bg-[#FEEDF5] shadow-md">
+              <p className=" text-sm md:text-base lg:text-lg">My Github</p>
+              <RxArrowRight className=" size-5"/>
+            </Badge>
+          </div>
+          <Image
+            src="/aggie-seek-banner.png"
+            alt="aggie seek 1"
+            width={600}
+            height={600}
+            className=""
+          />
+        </div>
       </div>
       <div className="flex flex-col gap-4">
         <div className="mt-4 flex flex-col lg:flex-row gap-2">
@@ -16,10 +39,10 @@ export default function Projects() {
             <div className=" space-y-4">
               <p className="text-lg font-semibold">AggieSeek</p>
               <p className=" text-sm">
-                AggieSeek is an application that notifies Texas A&M students
-                when classes open up. It allows students to get into classes
-                that may be extremely difficult to get into otherwise and has
-                1000+ users.
+                AggieSeek is a full stack web application that notifies Texas
+                A&M students when classes open up. It allows students to get
+                into classes that may be extremely difficult to get into
+                otherwise and has 1000+ users.
               </p>
             </div>
             <div className=" flex items-center gap-4 mt-8 lg:mt-0">
@@ -110,7 +133,10 @@ export default function Projects() {
             <div className=" space-y-4">
               <p className="text-lg font-semibold">SwipeTern</p>
               <p className=" text-sm">
-              SwipeTern is an cross platform application that matches students and recruiters to facilitate the internship recruitment process. Finding an internship can be a challenge, so we wanted to make this process easier. 
+                SwipeTern is an cross platform application that matches students
+                and recruiters to facilitate the internship recruitment process.
+                Finding an internship can be a challenge, so we wanted to make
+                this process easier.
               </p>
             </div>
             <div className=" flex items-center gap-4 mt-8 lg:mt-0">
@@ -172,12 +198,16 @@ export default function Projects() {
             <div className=" space-y-4">
               <p className="text-lg font-semibold">Sp/it</p>
               <p className=" text-sm">
-              Sp/it is a roomate companion application that allows roomates to split bills and keep track of expenses, create tasks through a task calender, chat, and track roomate locations. The goal was to create an app that would make it easier for roomates to stay organized and manage expenses. 
+                Sp/it is a roomate companion application that allows roomates to
+                split bills and keep track of expenses, create tasks through a
+                task calender, chat, and track roomate locations. The goal was
+                to create an app that would make it easier for roomates to stay
+                organized and manage expenses.
               </p>
             </div>
             <div className=" flex items-center gap-4 mt-8 lg:mt-0">
               <Button className="bg-[#FEEDF5] text-black border border-[#ABABAB] hover:bg-[#FFDCE8] space-x-2 hover:space-x-6 ">
-                <p>Visit SwipeTern</p>
+                <p>Visit Sp/it</p>
                 <RxArrowRight />
               </Button>
               <a
