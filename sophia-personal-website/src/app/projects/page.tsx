@@ -9,7 +9,7 @@ export default function Projects() {
     <main className="flex flex-col py-12 gap-4">
       <div className=" flex flex-col gap-8 ">
         <h1 className="font-bold text-3xl lg:text-4xl">Projects</h1>
-        <div className="bg-[#B07689] md:h-[23.5rem] -mx-8 lg:-mx-24 pl-8 lg:pl-24 gap-4 flex justify-between overflow-hidden">
+        <div className="bg-[#B07689] md:h-[23.5rem] -mx-8 lg:-mx-24 pl-8 lg:pl-24 gap-4 flex justify-between overflow-hidden group overflow-hidden">
           <div>
             <h1 className="mt-8 lg:mt-16 font-bold text-4xl lg:text-5xl text-white">Featured Work</h1>
             <div className="mt-4 lg:mt-8 text-white">
@@ -29,6 +29,7 @@ export default function Projects() {
             alt="aggie seek 1"
             width={600}
             height={600}
+            className=" transform transition-transform duration-300 group-hover:scale-105"
           />
         </div>
       </div>
