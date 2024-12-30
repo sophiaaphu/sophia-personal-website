@@ -12,14 +12,14 @@ export default function Projects() {
         <div className="bg-[#B07689] md:h-[23.5rem] -mx-8 lg:-mx-24 pl-8 lg:pl-24 gap-4 flex justify-between group overflow-hidden">
           <div>
             <h1 className="mt-8 lg:mt-16 font-bold text-4xl lg:text-5xl text-white">Featured Work</h1>
-            <div className="mt-4 lg:mt-8 text-white">
+            <div className="mt-6 lg:mt-8 text-white">
               <p className=" text-base lg:text-lg">View the work I created/contributed to!</p>
               <p className=" text-base lg:text-lg hidden lg:block">
                 Hackathon projects, Aggie Coding Club Projects, personal projects,
                 and more!
               </p>
             </div>
-            <Badge className=" lg:px-6 mt-4 mb-8 lg:mt-8 bg-[#FFDCE8] text-black font-normal space-x-2 hover:space-x-6 hover:bg-[#FEEDF5] shadow-md">
+            <Badge className=" lg:px-6 mt-6 mb-8 lg:mt-8 bg-[#FFDCE8] text-black font-normal space-x-2 hover:space-x-6 hover:bg-[#FEEDF5] shadow-md">
               <p className=" text-sm md:text-base lg:text-lg">My Github</p>
               <RxArrowRight className=" size-5"/>
             </Badge>
