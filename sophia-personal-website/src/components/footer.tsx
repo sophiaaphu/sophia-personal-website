@@ -7,13 +7,13 @@ export default function Footer() {
           <p className="text-sm">Made with</p><RxHeart className="w-4 h-4" /><p className="text-sm">by Sophia Phu</p>
         </div>
         <div className="flex space-x-5 lg:space-x-10">
-          <a href="https://www.instagram.com/sophiaaphu._/" target="_blank" rel="noopener noreferrer" className="hover:underline">
+          <a href="https://www.instagram.com/sophiaaphu._/" target="_blank" rel="noopener noreferrer" className="hover:-translate-y-1 duration-200">
             <RxInstagramLogo className="w-5 h-5" />
           </a>
-          <a href="https://github.com/sophiaaphu" target="_blank" rel="noopener noreferrer" className="hover:underline">
+          <a href="https://github.com/sophiaaphu" target="_blank" rel="noopener noreferrer" className="hover:-translate-y-1 duration-200">
             <RxGithubLogo className="w-5 h-5"  />
           </a>
-          <a href="https://www.linkedin.com/in/sophiaphu/" target="_blank" rel="noopener noreferrer" className="hover:underline">
+          <a href="https://www.linkedin.com/in/sophiaphu/" target="_blank" rel="noopener noreferrer" className="hover:-translate-y-1 duration-200">
             <RxLinkedinLogo className="w-5 h-5"  />
           </a>
         </div>
