@@ -164,7 +164,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="mt-8">
+      <div className="mt-8 mb-8">
         <p className="text-3xl lg:text-4xl font-bold mb-4">Updates</p>
         <EventList/>
       </div>
