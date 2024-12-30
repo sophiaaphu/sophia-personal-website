@@ -5,189 +5,158 @@ import Footer from "@/components/footer";
 import { Badge } from "@/components/ui/badge";
 import { RxGithubLogo } from "react-icons/rx";
 import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { RxArrowRight } from "react-icons/rx";
 
 export default function Projects() {
-  const swipetern = 
-    {
-      title: "Swipetern",
-      description: "SwipeTern is an app that matches students and recruiters to facilitate the internship recruitment process. Finding an internship can be a challenge, so we wanted to make this process easier. My team and I utilized React Native, as we thought that a mobile app would be effective for our app’s objective. We utilized Firebase for authentication and user data storage. This app was created during the TamuHack X Hackathon. I helped design and implement the UI/Frontend and set up the firebase authentication.",
-      imagePath: "/swipetern.png",
-      alt:"swipetern",
-      badges: ["React Native", "Cross Platform", "Expo", "Firebase"],
-      link:"https://github.com/obinnanprogrammed/tamuhack2024"
-    };
-  const jkss =
-    {
-      title: "JKSS Grade Distributions",
-      description: "JKSS Grade Dristibutions is a webapp that allows Texas A&M students to view grade distributions for professors they are considering taking classes with. My teammates and I knew the importance of selecting good professors, and we thought that this app would benefit many students. This project was created during the HowdyHack hackathon. I worked on the frontend of the project, utilizing React and Material-UI to create a user friendly interface. I also worked on the backend, utilizing Flask and PyMuPDF to extract data from the TAMU grade distribution PDFs.",
-      imagePath: "/jkss.png",
-      alt:"jkss",
-      badges: ["React", "Web Application", "Flask", "PymuPDF"],
-      link:"https://github.com/sohilgoswami/jkss"
-    };
-  const aggieSeek =
-    {
-      title: "AggieSeek",
-      description: "AggieSeek is a webapp that notifies students when courses at TAMU have open seats. My team and I had many struggles with our desired classes getting filled, so we wanted to create a solution. This project was part of the Aggie Coding Club project system. I worked on the frontend of the project, utilizing React, TailwindCSS, HeadlessUI, and ShadCN to create an aesthetic user interface. We utilized Flask, Beautiful Soup, and the Twilio API for the backend to scrape data from the TAMU course catalog and notify students through email, text, and discord. Firebase was used dor authentification and data storage.",
-      imagePath: "/aggie_seek.png",
-      alt:"aggieSeek",
-      badges: ["React", "Web Application", "Flask", "Beautiful Soup"],
-      link:"https://github.com/peterphann/aggieseek"
-    };
-  const split =
-    {
-      title: "Sp/it",
-      description: "Sp/it is a roomate companion application that allows roomates to split bills and keep track of expenses, create tasks through a task calender, chat, and track roomate locations. My team and I wanted to create an app that would make it easier for roomates to be able to have an easier time staying organized and managing expenses. This project was also part of the Aggie Coding Club project system. I worked on the frontend of the project, utilizing React Native to create a user centered cross platform application. I also leveraged Firebase to store user data and manage user authentification.",
-      imagePath: "/split.png",
-      alt:"split",
-      badges: ["React Native", "Cross Platform", "Expo", "Firebase"],
-      link:"https://github.com/Split-Project"
-    };
-const [selectedProject, setSelectedProject] = useState(swipetern);
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between gap-y-12  px-8 lg:px-24 bg-[#FBD0DE]">
-      <Header/>
+    <main className="flex flex-col py-12 gap-16">
+      <div>
+        <h1 className="font-bold text-3xl lg:text-4xl">Projects</h1>
+      </div>
       <div className="flex flex-col gap-4">
-        <h1 className="font-bold text-3xl lg:text-4xl">
-          My Projects :)
-        </h1>
-        <p>
-        View the work I created/contributed to! These projects include hackathon projects, Aggie Coding Club projects, and personal projects I was interested in creating. 
-        </p>
-        <div className="flex flex-col gap-8 lg:flex-row">
-          <div className=" bg-[#FEEDF5] rounded-2xl lg:w-1/2 drop-shadow-md border border-black">
-            <Image src={selectedProject.imagePath} alt={selectedProject.alt} width={2000} height={200} className=" rounded-t-2xl"/>
-            <div className="p-8 flex flex-col gap-2">
-              <h2 className=" font-bold text-2xl">
-                {selectedProject.title}
-              </h2>
-              <div className="flex flex-col md:flex-row gap-2">
-                <div>
-                  <Badge variant={'outline'} className="bg-[#FCBACB] border-[#DD3C87]">{selectedProject.badges[0]}</Badge>
-                </div>
-                <div>
-                  <Badge variant={'outline'} className="bg-[#FCBACB] border-[#DD3C87]">{selectedProject.badges[1]}</Badge>
-                </div>
-                <div>
-                  <Badge variant={'outline'} className="bg-[#FCBACB] border-[#DD3C87]">{selectedProject.badges[2]}</Badge>
-                </div>
-                <div>
-                  <Badge variant={'outline'} className="bg-[#FCBACB] border-[#DD3C87]">{selectedProject.badges[3]}</Badge>
-                </div>
-              </div>
-              <div>
-                <p>
-                  {selectedProject.description}
-                </p>
-              </div>
-              <div className="text-pink-500 hover:translate-y-2 duration-200">
-                <a href={selectedProject.link} target="_blank">
-                  <RxGithubLogo className="w-6 h-6"/>
-                </a>
-              </div>
+        <div className="mt-4 flex flex-col lg:flex-row gap-2">
+          <div className="flex flex-col bg-[#FEEDF5] p-4 md:p-8 rounded-lg lg:w-1/3 justify-between shadow-md">
+            <div className=" space-y-4">
+              <p className="text-lg font-semibold">AggieSeek</p>
+              <p className=" text-sm">
+                AggieSeek is an application that notifies Texas A&M students
+                when classes open up. It allows students to get into classes
+                that may be extremely difficult to get into otherwise and has
+                1000+ users.
+              </p>
+            </div>
+            <div className=" flex items-center gap-4 mt-8 lg:mt-0">
+              <Button className="bg-[#FEEDF5] text-black border border-[#ABABAB] hover:bg-[#FFDCE8] space-x-2 hover:space-x-6 ">
+                <p>Visit AggieSeek</p>
+                <RxArrowRight />
+              </Button>
+              <a
+                href="https://github.com/sophiaaphu"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                <RxGithubLogo className="w-5 h-5" />
+              </a>
             </div>
           </div>
-          <div className="flex lg:w-1/2 flex-col gap-4">
-          <div className="flex gap-4">
-            <div>
-              <div onClick={() => setSelectedProject(swipetern)} className=" bg-[#FEEDF5] rounded-2xl drop-shadow-md border border-black">
-                <Image src={swipetern.imagePath} alt={swipetern.alt} width={2000} height={200} className=" rounded-t-2xl"/>
-                <div className="p-4 flex flex-col gap-2">
-                  <p className="font-bold text-xl">
-                    {swipetern.title}
-                  </p>
-                  <div className="flex flex-col gap-1">
-                    <div>
-                      <Badge variant={'outline'} className="bg-[#FCBACB] border-[#DD3C87]">{swipetern.badges[0]}</Badge>
-                    </div>
-                    <div>
-                      <Badge variant={'outline'} className="bg-[#FCBACB] border-[#DD3C87]">{swipetern.badges[1]}</Badge>
-                    </div>
-                  </div>
-                  <div className="text-pink-500 hover:translate-y-2 duration-200">
-                    <a href={swipetern.link} target="_blank">
-                      <RxGithubLogo className="w-6 h-6"/>
-                    </a>
-                  </div>
-                </div>
-              </div>
+          <div className="flex gap-4 md:gap-8 bg-[#DAB6BC] sm:px-4 md:px-8 rounded-lg lg:w-2/3 shadow-md pt-4 md:pt-8 group overflow-hidden">
+            <div className="flex -ml-4 sm:-ml-0 items-end transform transition-transform duration-300 group-hover:scale-105">
+              <Image
+                src="/aggie-seek-new-1.png"
+                alt="aggie seek 1"
+                width={450}
+                height={400}
+                className=" rounded-t-lg"
+              />
             </div>
-            <div>
-              <div onClick={() => setSelectedProject(jkss)} className="bg-[#FEEDF5] rounded-2xl drop-shadow-md border border-black">
-                <Image src={jkss.imagePath} alt={jkss.alt} width={2000} height={200} className=" rounded-t-2xl"/>
-                <div className="p-4 flex flex-col gap-2">
-                  <p className="font-bold text-xl">
-                    {jkss.title}
-                  </p>
-                  <div className="flex flex-col gap-1">
-                    <div>
-                      <Badge variant={'outline'} className="bg-[#FCBACB] border-[#DD3C87]">{jkss.badges[0]}</Badge>
-                    </div>
-                    <div>
-                      <Badge variant={'outline'} className="bg-[#FCBACB] border-[#DD3C87]">{jkss.badges[1]}</Badge>
-                    </div>
-                  </div>
-                  <div className="text-pink-500 hover:translate-y-2 duration-200">
-                  <a href={jkss.link} target="_blank">
-                    <RxGithubLogo className="w-6 h-6"/>
-                  </a>
-                  </div>
-                </div>
-              </div>
+            <div className="flex -mr-4 sm:-mr-0 items-end transform transition-transform duration-300 group-hover:scale-105">
+              <Image
+                src="/aggie-seek-new-2.png"
+                alt="aggie seek 2"
+                width={450}
+                height={400}
+                className=" rounded-t-lg"
+              />
             </div>
           </div>
-          <div className="flex gap-4">
-            <div>
-              <div onClick={() => setSelectedProject(aggieSeek)} className=" bg-[#FEEDF5] rounded-2xl drop-shadow-md border border-black">
-                <Image src={aggieSeek.imagePath} alt={aggieSeek.alt} width={2000} height={200} className=" rounded-t-2xl"/>
-                <div className="p-4 flex flex-col gap-2">
-                  <p className="font-bold text-xl">
-                    {aggieSeek.title}
-                  </p>
-                  <div className="flex flex-col gap-1">
-                    <div>
-                      <Badge variant={'outline'} className="bg-[#FCBACB] border-[#DD3C87]">{aggieSeek.badges[0]}</Badge>
-                    </div>
-                    <div>
-                      <Badge variant={'outline'} className="bg-[#FCBACB] border-[#DD3C87]">{aggieSeek.badges[1]}</Badge>
-                    </div>
-                  </div>
-                  <div className="text-pink-500 hover:translate-y-2 duration-200">
-                    <a href={aggieSeek.link} target="_blank">
-                      <RxGithubLogo className="w-6 h-6"/>
-                    </a>
-                  </div>
-                </div>
-              </div>
+        </div>
+        <div className="mt-2 flex flex-col-reverse lg:flex-row gap-2">
+          <div className="flex flex-col bg-[#FEEDF5] p-4 md:p-8 rounded-lg lg:w-1/3 justify-between shadow-md">
+            <div className="space-y-4">
+              <p className="text-lg font-semibold">TAO Website</p>
+              <p className=" text-sm ">
+                The TAO website displays essential resources for 4000+ freshman
+                engineers going through intro engineering coursework. It
+                displays TAO events and announcements, TAO social media links,
+                and review materials.
+              </p>
             </div>
-            <div>
-              <div onClick={() => setSelectedProject(split)} className="bg-[#FEEDF5] rounded-2xl drop-shadow-md border border-black">
-                <Image src={split.imagePath} alt={split.imagePath} width={2000} height={200} className=" rounded-t-2xl"/>
-                <div className="p-4 flex flex-col gap-2">
-                  <p className="font-bold text-xl">
-                    {split.title}
-                  </p>
-                  <div className="flex flex-col gap-1">
-                    <div>
-                      <Badge variant={'outline'} className="bg-[#FCBACB] border-[#DD3C87]">{split.badges[0]}</Badge>
-                    </div>
-                    <div>
-                      <Badge variant={'outline'} className="bg-[#FCBACB] border-[#DD3C87]">{split.badges[1]}</Badge>
-                    </div>
-                  </div>
-                  <div className="text-pink-500 hover:translate-y-2 duration-200">
-                  <a href={split.link} target="_blank">
-                    <RxGithubLogo className="w-6 h-6"/>
-                  </a>
-                  </div>
-                </div>
-              </div>
+            <div className=" flex items-center gap-4 mt-8 lg:mt-0">
+              <Button className="bg-[#FEEDF5] text-black border border-[#ABABAB] hover:bg-[#FFDCE8] space-x-2 hover:space-x-6">
+                <p>Visit TAO Website</p>
+                <RxArrowRight />
+              </Button>
+              <a
+                href="https://github.com/sophiaaphu"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                <RxGithubLogo className="w-5 h-5" />
+              </a>
             </div>
           </div>
+          <div className="flex gap-4 md:gap-8 bg-[#FEB1BE] sm:px-4 md:px-8 rounded-lg lg:w-2/3 shadow-md pt-4 md:pt-8 group overflow-hidden">
+            <div className="flex -ml-4 sm:-ml-0 items-end transform transition-transform duration-300 group-hover:scale-105">
+              <Image
+                src="/tao-website-1.png"
+                alt="tao website 1"
+                width={450}
+                height={400}
+                className=" rounded-t-lg"
+              />
+            </div>
+            <div className="flex -mr-4 sm:-mr-0 items-end transform transition-transform duration-300 group-hover:scale-105">
+              <Image
+                src="/tao-website-2.png"
+                alt="tao website 2"
+                width={450}
+                height={400}
+                className=" rounded-t-lg"
+              />
+            </div>
+          </div>
+        </div>
+        <div className="mt-4 flex flex-col lg:flex-row gap-2">
+          <div className="flex flex-col bg-[#FEEDF5] p-4 md:p-8 rounded-lg lg:w-1/3 justify-between shadow-md">
+            <div className=" space-y-4">
+              <p className="text-lg font-semibold">AggieSeek</p>
+              <p className=" text-sm">
+                AggieSeek is an application that notifies Texas A&M students
+                when classes open up. It allows students to get into classes
+                that may be extremely difficult to get into otherwise and has
+                1000+ users.
+              </p>
+            </div>
+            <div className=" flex items-center gap-4 mt-8 lg:mt-0">
+              <Button className="bg-[#FEEDF5] text-black border border-[#ABABAB] hover:bg-[#FFDCE8] space-x-2 hover:space-x-6 ">
+                <p>Visit AggieSeek</p>
+                <RxArrowRight />
+              </Button>
+              <a
+                href="https://github.com/sophiaaphu"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                <RxGithubLogo className="w-5 h-5" />
+              </a>
+            </div>
+          </div>
+          <div className="flex gap-4 md:gap-8 bg-[#DAB6BC] sm:px-4 md:px-8 rounded-lg lg:w-2/3 shadow-md pt-4 md:pt-8 group overflow-hidden">
+            <div className="flex -ml-4 sm:-ml-0 items-end transform transition-transform duration-300 group-hover:scale-105">
+              <Image
+                src="/aggie-seek-new-1.png"
+                alt="aggie seek 1"
+                width={450}
+                height={400}
+                className=" rounded-t-lg"
+              />
+            </div>
+            <div className="flex -mr-4 sm:-mr-0 items-end transform transition-transform duration-300 group-hover:scale-105">
+              <Image
+                src="/aggie-seek-new-2.png"
+                alt="aggie seek 2"
+                width={450}
+                height={400}
+                className=" rounded-t-lg"
+              />
+            </div>
           </div>
         </div>
       </div>
-      <Footer />
     </main>
   );
 }
