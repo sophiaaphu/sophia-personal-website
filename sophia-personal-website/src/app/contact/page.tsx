@@ -43,7 +43,7 @@ export default function Contact() {
 
   return (
     <main className="flex flex-col py-12 gap-16">
-      <div className="flex flex-col gap-4 pb-8">
+      <div className="flex flex-col gap-4">
         <h1 className="font-bold text-3xl lg:text-4xl">Contact Me</h1>
         <div>
           <p className=" text-small md:text-base">
