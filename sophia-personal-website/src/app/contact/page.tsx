@@ -107,7 +107,7 @@ export default function Contact() {
             <div className="flex">
               <Button
                 type="submit"
-                className=" w-48 shadow-md"
+                className=" w-48 shadow-md hover:-translate-y-2 duration-200"
               >
                 Submit
               </Button>
