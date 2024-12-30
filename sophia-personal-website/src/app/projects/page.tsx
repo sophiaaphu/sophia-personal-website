@@ -17,7 +17,7 @@ export default function Projects() {
             <h1 className="mt-6 lg:mt-16 font-bold text-4xl lg:text-5xl text-white">Featured Work</h1>
             <div className="mt-4 lg:mt-8 text-white">
               <p className=" text-sm md:text-base lg:text-lg">View the work I created/contributed to!</p>
-              <p className=" text-base lg:text-lg hidden lg:block">
+              <p className=" text-base lg:mt-2 lg:text-lg hidden lg:block">
                 Hackathon projects, Aggie Coding Club Projects, personal projects,
                 and more!
               </p>
