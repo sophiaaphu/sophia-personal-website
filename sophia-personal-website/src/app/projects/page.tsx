@@ -1,10 +1,13 @@
+'use client';
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import { RxGithubLogo } from "react-icons/rx";
 import { Button } from "@/components/ui/button";
 import { RxArrowRight } from "react-icons/rx";
+import { useState } from "react";
 
 export default function Projects() {
+  const [bannerImage, setBannerImage] = useState("/actual-aggie-seek-banner.png");
   return (
     <main className="flex flex-col py-12 gap-4">
       <div className=" flex flex-col gap-4 ">
@@ -20,17 +23,21 @@ export default function Projects() {
               </p>
             </div>
             <Badge className=" lg:px-6 mt-4 mb-6 lg:mt-8 bg-[#FFDCE8] text-black font-normal space-x-2 hover:space-x-6 hover:bg-[#FEEDF5] shadow-md">
-              <p className=" text-sm md:text-base lg:text-lg">My Github</p>
+              <p className=" text-sm md:text-base">My Github</p>
               <RxArrowRight className=" size-5"/>
             </Badge>
           </div>
           <Image
-            src="/actual-aggie-seek-banner.png"
-            alt="aggie seek banner"
+            src={bannerImage}
+            alt="Banner"
             width={600}
             height={600}
             className="transform transition-transform duration-300 group-hover:scale-105 "
           />
+        </div>
+        <div className="flex gap-2 justify-center -mt-2">
+          <div className=" bg-[#B07689] h-2 w-8 rounded hover:w-12 hover:bg-[#E3A0BA]" onClick={() => setBannerImage("/actual-aggie-seek-banner.png")}></div>
+          <div className=" bg-[#B07689] h-2 w-8 rounded hover:w-12 hover:bg-[#E3A0BA]" onClick={() => setBannerImage("/tao-banner.png")}></div>
         </div>
       </div>
       <div className="flex flex-col gap-4">
