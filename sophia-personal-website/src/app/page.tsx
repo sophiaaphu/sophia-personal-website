@@ -27,9 +27,11 @@ export default function Home() {
             positively impact my community.
           </p>
           <div className="flex items-center gap-6">
-            <Button className=" bg-[#FEEDF5] text-black drop-shadow-md hover:bg-[#F986B0] hover:-translate-y-1 duration-200">
-              Learn more about me
-            </Button>
+            <Link href="/about">
+              <Button className=" bg-[#FEEDF5] text-black drop-shadow-md hover:bg-[#F986B0] hover:-translate-y-1 duration-200">
+                Learn more about me
+              </Button>
+            </Link>
             <div className="flex space-x-4 text-pink-500">
               <a
                 href="https://www.instagram.com/sophiaaphu._/"
@@ -81,12 +83,18 @@ export default function Home() {
               </p>
             </div>
             <div className=" flex items-center gap-4 mt-8 lg:mt-0">
-              <Button className="bg-[#FEEDF5] text-black border border-[#ABABAB] hover:bg-[#FFDCE8] space-x-2 hover:space-x-6 ">
-                <p>Visit AggieSeek</p>
-                <RxArrowRight />
-              </Button>
               <a
-                href="https://github.com/sophiaaphu"
+                href="https://new.aggieseek.net/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button className="bg-[#FEEDF5] text-black border border-[#ABABAB] hover:bg-[#FFDCE8] space-x-2 hover:space-x-6 ">
+                  <p>Visit AggieSeek</p>
+                  <RxArrowRight />
+                </Button>
+              </a>
+              <a
+                href="https://github.com/aggieseek/aggieseek"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline"
@@ -148,12 +156,18 @@ export default function Home() {
               </p>
             </div>
             <div className=" flex items-center gap-4 mt-8 lg:mt-0">
-              <Button className="bg-[#FEEDF5] text-black border border-[#ABABAB] hover:bg-[#FFDCE8] space-x-2 hover:space-x-6">
-                <p>Visit TAO Website</p>
-                <RxArrowRight />
-              </Button>
               <a
-                href="https://github.com/sophiaaphu"
+                href="https://engrtao.tech/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button className="bg-[#FEEDF5] text-black border border-[#ABABAB] hover:bg-[#FFDCE8] space-x-2 hover:space-x-6">
+                  <p>Visit TAO Website</p>
+                  <RxArrowRight />
+                </Button>
+              </a>
+              <a
+                href="https://github.com/TAO-ENGR/club-website"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline"
@@ -166,7 +180,7 @@ export default function Home() {
       </div>
       <div className="mt-8 mb-8">
         <p className="text-3xl lg:text-4xl font-bold mb-4">Updates</p>
-        <EventList/>
+        <EventList />
       </div>
     </main>
   );
