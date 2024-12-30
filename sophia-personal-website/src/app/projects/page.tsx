@@ -167,6 +167,68 @@ export default function Projects() {
             </div>
           </div>
         </div>
+        <div className="mt-4 flex flex-col lg:flex-row gap-2">
+          <div className="flex flex-col bg-[#FEEDF5] p-4 md:p-8 rounded-lg lg:w-1/3 justify-between shadow-md">
+            <div className=" space-y-4">
+              <p className="text-lg font-semibold">Sp/it</p>
+              <p className=" text-sm">
+              Sp/it is a roomate companion application that allows roomates to split bills and keep track of expenses, create tasks through a task calender, chat, and track roomate locations. The goal was to create an app that would make it easier for roomates to stay organized and manage expenses. 
+              </p>
+            </div>
+            <div className=" flex items-center gap-4 mt-8 lg:mt-0">
+              <Button className="bg-[#FEEDF5] text-black border border-[#ABABAB] hover:bg-[#FFDCE8] space-x-2 hover:space-x-6 ">
+                <p>Visit SwipeTern</p>
+                <RxArrowRight />
+              </Button>
+              <a
+                href="https://github.com/sophiaaphu"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                <RxGithubLogo className="w-5 h-5" />
+              </a>
+            </div>
+          </div>
+          <div className="flex gap-4 md:gap-8 bg-[#C0C0C0] sm:pl-4 md:pl-8 rounded-lg lg:w-2/3 shadow-md pt-4 md:pt-8 group overflow-hidden">
+            <div className="flex -ml-4 sm:-ml-0 items-end transform transition-transform duration-300 group-hover:scale-105">
+              <Image
+                src="/split-1.png"
+                alt="split 1"
+                width={450}
+                height={400}
+                className=" rounded-t-lg"
+              />
+            </div>
+            <div className="flex items-end transform transition-transform duration-300 group-hover:scale-105">
+              <Image
+                src="/split-2.png"
+                alt="split2"
+                width={450}
+                height={400}
+                className=" rounded-t-lg"
+              />
+            </div>
+            <div className="flex  items-end transform transition-transform duration-300 group-hover:scale-105">
+              <Image
+                src="/split-3.png"
+                alt="split3"
+                width={450}
+                height={400}
+                className=" rounded-t-lg"
+              />
+            </div>
+            <div className="flex -mr-4 sm:-mr-0 items-end transform transition-transform duration-300 group-hover:scale-105">
+              <Image
+                src="/split-4.png"
+                alt="split4"
+                width={300}
+                height={400}
+                className=" rounded-t-lg"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </main>
   );
