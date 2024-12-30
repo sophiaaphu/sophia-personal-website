@@ -22,7 +22,7 @@ const components = [
     },
     {
       title: "Resume",
-      href: "/resume",
+      href: "https://drive.google.com/file/d/1l_ZYUjVsBTHMnOFywGmIeic6DmtWhvG_/preview",
       description: "View and download my resume.",
     },
 ];
