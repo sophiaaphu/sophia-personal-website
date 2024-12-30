@@ -25,11 +25,11 @@ export default function Projects() {
             </Badge>
           </div>
           <Image
-            src="/aggie-seek-banner.png"
-            alt="aggie seek 1"
+            src="/actual-aggie-seek-banner.png"
+            alt="aggie seek banner"
             width={600}
             height={600}
-            className=" mt-8 sm:mt-0 transform transition-transform duration-300 group-hover:scale-105"
+            className="transform transition-transform duration-300 group-hover:scale-105"
           />
         </div>
       </div>
