@@ -40,7 +40,7 @@ export default function Projects() {
           <div className=" bg-[#B07689] h-2 w-8 rounded hover:w-12 hover:bg-[#E3A0BA]" onClick={() => setBannerImage("/tao-banner.png")}></div>
         </div>
       </div>
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 pb-8">
         <div className="mt-2 flex flex-col lg:flex-row gap-2">
           <div className="flex flex-col bg-[#FEEDF5] p-4 md:p-8 rounded-lg lg:w-1/3 justify-between shadow-md">
             <div className=" space-y-4">

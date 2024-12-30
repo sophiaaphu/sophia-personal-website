@@ -1,7 +1,7 @@
 import { RxInstagramLogo, RxGithubLogo, RxLinkedinLogo,RxHeart  } from "react-icons/rx";
 export default function Footer() {
   return (
-    <footer className="text-pink-500 pb-4 w-full">
+    <footer className="text-pink-500 pb-4">
       <div className="flex justify-between items-center">
         <div className="hidden md:flex items-center gap-2">
           <p className="text-sm">Made with</p><RxHeart className="w-4 h-4" /><p className="text-sm">by Sophia Phu</p>
