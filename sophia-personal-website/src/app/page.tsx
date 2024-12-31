@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
@@ -9,54 +10,122 @@ import {
   RxLinkedinLogo,
   RxArrowRight,
 } from "react-icons/rx";
+import { motion } from "framer-motion";
 
 export default function Home() {
+  const typingText =
+    "Hi I'm Sophia, I'm a software developer and computer engineer";
+
+  const textContainerVariants = {
+    hidden: { opacity: 1 },
+    visible: {
+      transition: {
+        staggerChildren: 0.1, // Controls the typing speed
+      },
+    },
+  };
+  const textVariants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1 },
+  };
+  const paragraphVariants = {
+    hidden: { x: -100, opacity: 0 }, // Start from the left
+    visible: { x: 0, opacity: 1 }, // Slide to its original position
+  };
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        delayChildren: 3, // Delay before starting staggerChildren
+        staggerChildren: 0.3, // Controls delay between each child animation
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { y: 20, opacity: 0 },
+    visible: { y: 0, opacity: 1 },
+  };
+
   return (
     <main className="flex flex-col py-12 gap-16">
       <div className="flex flex-col md:flex-row lg:items-center gap-4 lg:gap-0  ">
         <div className="flex flex-col gap-6">
-          <h1 className=" text-3xl lg:text-4xl font-bold">
-            Hi I'm{" "}
-            <span className=" font-normal" style={hello.style}>
-              Sophia
-            </span>
-            , software developer and computer engineer
-          </h1>
-          <p className="text-sm lg:text-base">
-            I enjoy creating projects that are aesthetic, user centered, and
-            positively impact my community.
-          </p>
+          <div className=" text-3xl lg:text-4xl font-bold">
+            <motion.div
+              initial="hidden"
+              animate="visible"
+              variants={textContainerVariants}
+            >
+              {typingText.split(" ").map((word, index) => (
+                <motion.span
+                  key={index}
+                  variants={textVariants}
+                  style={
+                    word === "Sophia,"
+                      ? { ...hello.style, fontWeight: "400" } // Normal font weight
+                      : {}
+                  }
+                >
+                  {word}{" "}
+                </motion.span>
+              ))}
+            </motion.div>
+          </div>
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={paragraphVariants}
+            transition={{ duration: 1, delay: 1.5 }} // Adjust duration for the animation
+          >
+            <p className="text-sm lg:text-base">
+              I enjoy creating projects that are aesthetic, user-centered, and
+              positively impact my community.
+            </p>
+          </motion.div>
           <div className="flex items-center gap-6">
             <Link href="/about">
-              <Button className=" bg-[#FEEDF5] text-black drop-shadow-md hover:bg-[#F986B0] hover:-translate-y-1 duration-200">
+              <Button className=" bg-[#FEEDF5] text-black drop-shadow-md hover:bg-[#FCBACB] hover:-translate-y-1 duration-200">
                 Learn more about me
               </Button>
             </Link>
             <div className="flex space-x-4 text-pink-500">
-              <a
-                href="https://www.instagram.com/sophiaaphu._/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:-translate-y-2 duration-200"
+              <motion.div
+                variants={containerVariants}
+                initial="hidden"
+                animate="visible"
               >
-                <RxInstagramLogo className="w-5 h-5" />
-              </a>
-              <a
-                href="https://github.com/sophiaaphu"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:-translate-y-2 duration-200"
-              >
-                <RxGithubLogo className="w-5 h-5" />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/sophiaphu/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:-translate-y-2 duration-200"
-              >
-                <RxLinkedinLogo className="w-5 h-5" />
-              </a>
+                <div className="flex space-x-4">
+                  <motion.div variants={itemVariants} whileHover={{ y: -5 }}>
+                    <a
+                      href="https://www.instagram.com/sophiaaphu._/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <RxInstagramLogo className="w-5 h-5" />
+                    </a>
+                  </motion.div>
+                  <motion.div variants={itemVariants} whileHover={{ y: -5 }}>
+                    <a
+                      href="https://github.com/sophiaaphu"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <RxGithubLogo className="w-5 h-5" />
+                    </a>
+                  </motion.div>
+                  <motion.div variants={itemVariants} whileHover={{ y: -5 }}>
+                    <a
+                      href="https://www.linkedin.com/in/sophiaphu/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <RxLinkedinLogo className="w-5 h-5" />
+                    </a>
+                  </motion.div>
+                </div>
+              </motion.div>
             </div>
           </div>
         </div>
