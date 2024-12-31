@@ -59,7 +59,7 @@ export default function Header() {
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
-                <NavigationMenuTrigger>About</NavigationMenuTrigger>
+                <NavigationMenuTrigger >About</NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="bg-[#FFDCE8] grid w-[200px] gap-3 p-4 md:w-[250px] md:grid-cols-1 lg:w-[300px]">
                     {components.map((component) => (
