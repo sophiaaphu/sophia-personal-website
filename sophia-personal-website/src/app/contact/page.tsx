@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import Image from "next/image";
 import Header from "@/components/header";
@@ -48,8 +48,8 @@ export default function Contact() {
         <div>
           <p className=" text-sm md:text-base">
             If you want to contact me, feel free to email me at
-            sophiatiffphu@gmail.com or message me on LinkedIn. However, for
-            your convenience, you can also message me right here!
+            sophiatiffphu@gmail.com or message me on LinkedIn. However, for your
+            convenience, you can also message me right here!
           </p>
         </div>
         <div className="bg-[#FEEDF5] rounded-lg shadow-md">

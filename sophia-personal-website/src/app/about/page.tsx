@@ -46,8 +46,10 @@ export default function About() {
         </div>
       </div>
       <div className=" mb-8">
-        <h1 className="font-bold text-3xl lg:text-4xl mt-8 mb-4">What am I up to?</h1>
-        <UpToList/>
+        <h1 className="font-bold text-3xl lg:text-4xl mt-8 mb-4">
+          What am I up to?
+        </h1>
+        <UpToList />
       </div>
     </main>
   );
