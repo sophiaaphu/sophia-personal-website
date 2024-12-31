@@ -1,30 +1,30 @@
-'use client';
+"use client";
 import React, { useState } from "react";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import {
-    NavigationMenu,
-    NavigationMenuContent,
-    NavigationMenuItem,
-    NavigationMenuLink,
-    NavigationMenuList,
-    NavigationMenuTrigger,
-    navigationMenuTriggerStyle
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import { RxHamburgerMenu } from "react-icons/rx";
 
 const components = [
-    {
-      title: "About Me",
-      href: "/about",
-      description: "Learn more about me here.",
-    },
-    {
-      title: "Resume",
-      href: "https://drive.google.com/file/d/1l_ZYUjVsBTHMnOFywGmIeic6DmtWhvG_/preview",
-      description: "View and download my resume.",
-    },
+  {
+    title: "About Me",
+    href: "/about",
+    description: "Learn more about me here.",
+  },
+  {
+    title: "Resume",
+    href: "https://drive.google.com/file/d/1l_ZYUjVsBTHMnOFywGmIeic6DmtWhvG_/preview",
+    description: "View and download my resume.",
+  },
 ];
 
 export default function Header() {
@@ -36,10 +36,18 @@ export default function Header() {
 
   return (
     <header className="w-full">
-      <nav className="flex items-center justify-between pt-4 w-full" aria-label="Global">
+      <nav
+        className="flex items-center justify-between pt-4 w-full"
+        aria-label="Global"
+      >
         <div className="flex justify-start">
           <a href="/" className="-m-1.5 p-1.5">
-            <Image src='/sophia-phu-logo.png' alt="sophia logo" width={125} height={50} />
+            <Image
+              src="/sophia-phu-logo.png"
+              alt="sophia logo"
+              width={125}
+              height={50}
+            />
           </a>
         </div>
         <div className="flex md:hidden">
@@ -51,11 +59,15 @@ export default function Header() {
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
-                <NavigationMenuTrigger >About</NavigationMenuTrigger>
+                <NavigationMenuTrigger>About</NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="bg-[#FFDCE8] grid w-[200px] gap-3 p-4 md:w-[250px] md:grid-cols-1 lg:w-[300px]">
                     {components.map((component) => (
-                      <ListItem key={component.title} title={component.title} href={component.href}>
+                      <ListItem
+                        key={component.title}
+                        title={component.title}
+                        href={component.href}
+                      >
                         {component.description}
                       </ListItem>
                     ))}
@@ -82,30 +94,67 @@ export default function Header() {
       </nav>
       {isOpen && (
         <div className="md:hidden fixed inset-0 bg-gray-800 bg-opacity-50 z-50">
-  <div className="fixed top-0 right-0 w-64 h-full bg-[#FEEDF5] p-4 shadow-lg z-50">
-    <div className="flex justify-end">
-      <button onClick={toggleDrawer} className="p-2 text-gray-700">
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
-        </svg>
-      </button>
-    </div>
-    <div className="mt-4">
-      <div className="text-right hover:underline duration-200">
-        <a href="/about" className="block px-4 py-2 text-gray-700" onClick={toggleDrawer}>About</a>
-      </div>
-      <div className="text-right hover:underline duration-200">
-        <a href="https://drive.google.com/file/d/1l_ZYUjVsBTHMnOFywGmIeic6DmtWhvG_/preview" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-gray-700" onClick={toggleDrawer}>Resume</a>
-      </div>
-      <div className="text-right hover:underline duration-200">
-        <a href="/projects" className="block px-4 py-2 text-gray-700" onClick={toggleDrawer}>Projects</a>
-      </div>
-      <div className="text-right hover:underline duration-200">
-        <a href="/contact" className="block px-4 py-2 text-gray-700" onClick={toggleDrawer}>Contact</a>
-      </div>
-    </div>
-  </div>
-</div>
+          <div className="fixed top-0 right-0 w-64 h-full bg-[#FEEDF5] p-4 shadow-lg z-50">
+            <div className="flex justify-end">
+              <button onClick={toggleDrawer} className="p-2 text-gray-700">
+                <svg
+                  className="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div className="mt-4">
+              <div className="text-right hover:underline duration-200">
+                <a
+                  href="/about"
+                  className="block px-4 py-2 text-gray-700"
+                  onClick={toggleDrawer}
+                >
+                  About
+                </a>
+              </div>
+              <div className="text-right hover:underline duration-200">
+                <a
+                  href="https://drive.google.com/file/d/1l_ZYUjVsBTHMnOFywGmIeic6DmtWhvG_/preview"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block px-4 py-2 text-gray-700"
+                  onClick={toggleDrawer}
+                >
+                  Resume
+                </a>
+              </div>
+              <div className="text-right hover:underline duration-200">
+                <a
+                  href="/projects"
+                  className="block px-4 py-2 text-gray-700"
+                  onClick={toggleDrawer}
+                >
+                  Projects
+                </a>
+              </div>
+              <div className="text-right hover:underline duration-200">
+                <a
+                  href="/contact"
+                  className="block px-4 py-2 text-gray-700"
+                  onClick={toggleDrawer}
+                >
+                  Contact
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       )}
     </header>
   );
@@ -132,6 +181,6 @@ const ListItem = React.forwardRef<
         </a>
       </NavigationMenuLink>
     </li>
-  )
-})
-ListItem.displayName = "ListItem"
+  );
+});
+ListItem.displayName = "ListItem";
