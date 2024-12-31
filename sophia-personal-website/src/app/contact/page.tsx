@@ -1,16 +1,21 @@
-'use client';
+"use client";
+
 import Image from "next/image";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import emailjs from "@emailjs/browser";
-import { Button } from "@/components/ui/button";
 import { useState, FormEvent } from "react";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Button } from "@/components/ui/button";
+import { Textarea } from "@/components/ui/textarea";
 
 export default function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
+
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID as string;
@@ -22,8 +27,9 @@ export default function Contact() {
       subject: subject,
       message: message,
     };
-    emailjs.send(serviceId, templateId, templateParams, publicKey)
-      .then((response) =>{
+    emailjs
+      .send(serviceId, templateId, templateParams, publicKey)
+      .then((response) => {
         console.log("Email sent successfully", response);
         setName("");
         setEmail("");
@@ -33,46 +39,83 @@ export default function Contact() {
       .catch((error) => {
         console.log("Email failed to send", error);
       });
-  }
+  };
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between gap-y-12  px-8 lg:px-24 bg-[#FBD0DE]">
-      <Header/>
+    <main className="flex flex-col py-12 gap-16">
       <div className="flex flex-col gap-4">
-        <h1 className="font-bold text-3xl lg:text-4xl">
-          Contact Me
-        </h1>
+        <h1 className="font-bold text-3xl lg:text-4xl">Contact Me</h1>
         <div>
-          <p>
-            If you want to contact me, feel free to email me at sophiatiffphu@gmail.com or message me on Linkedln. However, for your convivence, you can also message me right here!
+          <p className=" text-sm md:text-base">
+            If you want to contact me, feel free to email me at
+            sophiatiffphu@gmail.com or message me on LinkedIn. However, for your
+            convenience, you can also message me right here!
           </p>
         </div>
-        <div className=" bg-[#FEEDF5] rounded-2xl">
+        <div className="bg-[#FEEDF5] rounded-lg shadow-md">
           <form onSubmit={sendEmail} className="flex flex-col gap-4 p-8">
-            <div className="flex flex-col gap-1">
-            <label htmlFor="name">Name</label>
-            <input type="text" placeholder= "Name" value={name} id="name" name="name" className="rounded-xl p-2 drop-shadow-md " required onChange={(e) => setName(e.target.value)}/>
+            <div className="space-y-2">
+              <Label htmlFor="name">Name</Label>
+              <Input
+                id="name"
+                name="name"
+                placeholder="Name"
+                value={name}
+                required
+                onChange={(e) => setName(e.target.value)}
+                className="shadow-md"
+              />
             </div>
-            <div className="flex flex-col gap-1">
-            <label htmlFor="email">Email</label>
-            <input type="email" placeholder= "Email" value = {email} id="email" name="email" className="rounded-xl p-2 drop-shadow-md " required onChange={(e) => setEmail(e.target.value)}/>
+            <div className="space-y-2">
+              <Label htmlFor="email">Email</Label>
+              <Input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="Email"
+                value={email}
+                required
+                onChange={(e) => setEmail(e.target.value)}
+                className="shadow-md"
+              />
             </div>
-            <div className="flex flex-col gap-1">
-            <label htmlFor="subject">Subject</label>
-            <input type="subject" placeholder= "Subject" value = {subject} id="subject" name="subject" className="rounded-xl p-2 drop-shadow-md " required onChange={(e) => setSubject(e.target.value)}/>
+            <div className="space-y-2">
+              <Label htmlFor="subject">Subject</Label>
+              <Input
+                id="subject"
+                name="subject"
+                placeholder="Subject"
+                value={subject}
+                required
+                onChange={(e) => setSubject(e.target.value)}
+                className="shadow-md"
+              />
             </div>
-            <div className="flex flex-col gap-1">
-            <label htmlFor="message">Message</label>
-            <textarea id="message" placeholder= "Message" rows={4} value = {message} name="message" className="rounded-xl p-2 drop-shadow-md " required onChange={(e) => setMessage(e.target.value)}/>
+            <div className="space-y-2">
+              <Label htmlFor="message">Message</Label>
+              <Textarea
+                id="message"
+                name="message"
+                placeholder="Message"
+                rows={4}
+                value={message}
+                required
+                onChange={(e) => setMessage(e.target.value)}
+                className="shadow-md"
+              />
             </div>
-            <div className="flex flex-col items-center gap-1">
-            <Button type="submit" className="bg-[#FBD0DE] rounded-xl p-2 w-1/2 lg:w-1/3 drop-shadow-md text-black hover:bg-[#FEEDF5]">Submit</Button>
+            <div className="flex">
+              <Button
+                type="submit"
+                className=" w-48 shadow-md hover:-translate-y-2 duration-200"
+              >
+                Submit
+              </Button>
             </div>
           </form>
         </div>
       </div>
-      <div className="lg:hidden">
-      </div>
-      <Footer />
+      <div className="lg:hidden"></div>
     </main>
   );
 }

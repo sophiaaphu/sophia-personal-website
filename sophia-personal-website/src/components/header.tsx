@@ -22,7 +22,7 @@ const components = [
     },
     {
       title: "Resume",
-      href: "/resume",
+      href: "https://drive.google.com/file/d/1l_ZYUjVsBTHMnOFywGmIeic6DmtWhvG_/preview",
       description: "View and download my resume.",
     },
 ];
@@ -35,7 +35,7 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-[#FBD0DE] w-full">
+    <header className="w-full">
       <nav className="flex items-center justify-between pt-4 w-full" aria-label="Global">
         <div className="flex justify-start">
           <a href="/" className="-m-1.5 p-1.5">
@@ -51,9 +51,9 @@ export default function Header() {
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
-                <NavigationMenuTrigger>About</NavigationMenuTrigger>
+                <NavigationMenuTrigger >About</NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <ul className="bg-[#FBD0DE] grid w-[200px] gap-3 p-4 md:w-[250px] md:grid-cols-1 lg:w-[300px]">
+                  <ul className="bg-[#FFDCE8] grid w-[200px] gap-3 p-4 md:w-[250px] md:grid-cols-1 lg:w-[300px]">
                     {components.map((component) => (
                       <ListItem key={component.title} title={component.title} href={component.href}>
                         {component.description}
@@ -95,7 +95,7 @@ export default function Header() {
         <a href="/about" className="block px-4 py-2 text-gray-700" onClick={toggleDrawer}>About</a>
       </div>
       <div className="text-right hover:underline duration-200">
-        <a href="/resume" className="block px-4 py-2 text-gray-700" onClick={toggleDrawer}>Resume</a>
+        <a href="https://drive.google.com/file/d/1l_ZYUjVsBTHMnOFywGmIeic6DmtWhvG_/preview" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-gray-700" onClick={toggleDrawer}>Resume</a>
       </div>
       <div className="text-right hover:underline duration-200">
         <a href="/projects" className="block px-4 py-2 text-gray-700" onClick={toggleDrawer}>Projects</a>
