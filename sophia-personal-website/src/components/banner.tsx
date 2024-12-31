@@ -74,7 +74,9 @@ export default function Banner() {
                   height={200}
                   className="mb-4"
                 />
-                <h3 className="text-black text-sm md:text-base">{card.title}</h3>
+                <h3 className="text-black text-sm md:text-base">
+                  {card.title}
+                </h3>
               </div>
             </a>
           ))}

@@ -1,4 +1,9 @@
-import { RiPencilFill, RiTerminalBoxFill, RiPushpin2Fill, RiFolder5Fill } from "react-icons/ri";
+import {
+  RiPencilFill,
+  RiTerminalBoxFill,
+  RiPushpin2Fill,
+  RiFolder5Fill,
+} from "react-icons/ri";
 import EventCard from "./eventCard";
 
 const EventList = () => {
@@ -28,7 +33,12 @@ const EventList = () => {
   return (
     <div className="flex flex-col gap-2">
       {events.map((event, index) => (
-        <EventCard key={index} icon={event.icon} text={event.text} date={event.date} />
+        <EventCard
+          key={index}
+          icon={event.icon}
+          text={event.text}
+          date={event.date}
+        />
       ))}
     </div>
   );
