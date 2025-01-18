@@ -172,7 +172,7 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="flex gap-4 md:gap-8 bg-[#DAB6BC] sm:px-4 md:px-8 rounded-lg lg:w-2/3 shadow-md pt-4 md:pt-8 group overflow-hidden">
+          <div className="flex gap-4 md:gap-8 bg-[#DAB6BC] sm:px-4 md:px-8 rounded-lg lg:w-2/3 shadow-md pt-4 md:pt-8 group overflow-hidden justify-center">
             <div className="flex -ml-4 sm:-ml-0 items-end transform transition-transform duration-300 group-hover:scale-105">
               <Image
                 src="/aggie-seek-new-1.png"
@@ -194,7 +194,7 @@ export default function Home() {
           </div>
         </div>
         <div className="mt-2 flex flex-col-reverse lg:flex-row gap-2">
-          <div className="flex gap-4 md:gap-8 bg-[#FEB1BE] sm:px-4 md:px-8 rounded-lg lg:w-2/3 shadow-md pt-4 md:pt-8 group overflow-hidden">
+          <div className="flex gap-4 md:gap-8 bg-[#FEB1BE] sm:px-4 md:px-8 rounded-lg lg:w-2/3 shadow-md pt-4 md:pt-8 group overflow-hidden justify-center">
             <div className="flex -ml-4 sm:-ml-0 items-end transform transition-transform duration-300 group-hover:scale-105">
               <Image
                 src="/tao-website-1.png"
