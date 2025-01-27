@@ -23,7 +23,7 @@ export default function Projects() {
               <p className=" text-sm md:text-base">
                 View the work I created/contributed to!
               </p>
-              <p className=" text-base lg:mt-2 hidden lg:block">
+              <p className=" text-base hidden lg:block">
                 Hackathon projects, Aggie Coding Club Projects, personal
                 projects, and more!
               </p>
