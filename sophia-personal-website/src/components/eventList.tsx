@@ -9,6 +9,11 @@ import EventCard from "./eventCard";
 const EventList = () => {
   const events = [
     {
+      icon: <RiTerminalBoxFill />,
+      text: "Placed second overall @ TAMUHack 25",
+      date: "November 2024",
+    },
+    {
       icon: <RiPencilFill />,
       text: "Released AggieSeek",
       date: "November 2024",
