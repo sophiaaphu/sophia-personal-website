@@ -10,6 +10,11 @@ const EventList = () => {
   const events = [
     {
       icon: <RiPencilFill />,
+      text: "Placed second overall @ TAMUHack 25",
+      date: "November 2024",
+    },
+    {
+      icon: <RiPencilFill />,
       text: "Released AggieSeek",
       date: "November 2024",
     },
@@ -22,11 +27,6 @@ const EventList = () => {
       icon: <RiPushpin2Fill />,
       text: "Became president of the ENGR TAO",
       date: "September 2024",
-    },
-    {
-      icon: <RiFolder5Fill />,
-      text: "Became a TA for CSCE 120",
-      date: "August 2024",
     },
   ];
 
