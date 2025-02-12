@@ -22,12 +22,7 @@ const EventList = () => {
       icon: <RiPushpin2Fill />,
       text: "Became president of the ENGR TAO",
       date: "September 2024",
-    },
-    {
-      icon: <RiFolder5Fill />,
-      text: "Became a TA for CSCE 120",
-      date: "August 2024",
-    },
+    }
   ];
 
   return (
