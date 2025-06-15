@@ -1,13 +1,23 @@
 import {
   RiPencilFill,
   RiTerminalBoxFill,
-  RiPushpin2Fill,
   RiPlaneFill,
+  RiCarFill
 } from "react-icons/ri";
 import EventCard from "./eventCard";
 
 const EventList = () => {
   const events = [
+    {
+      icon: <RiCarFill />,
+      text: "Started SWE Internship @ Uber",
+      date: "May 2025",
+    },
+    {
+      icon: <RiTerminalBoxFill />,
+      text: "Became Projects Chair @ ACC",
+      date: "April 2025",
+    },
     {
       icon: <RiPlaneFill />,
       text: "Placed Second Overall @ TAMUHack 25",
@@ -18,16 +28,6 @@ const EventList = () => {
       text: "Released AggieSeek",
       date: "November 2024",
     },
-    {
-      icon: <RiTerminalBoxFill />,
-      text: "Went to JPMC Code for Good",
-      date: "October 2024",
-    },
-    {
-      icon: <RiPushpin2Fill />,
-      text: "Became president of the ENGR TAO",
-      date: "September 2024",
-    }
   ];
 
   return (

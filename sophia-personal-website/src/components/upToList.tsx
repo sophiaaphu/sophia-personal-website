@@ -1,19 +1,33 @@
 import {
+  RiCarFill,
   RiPushpin2Fill,
   RiFolder5Fill,
   RiCodeBoxFill,
   RiGitBranchLine,
   RiKeyboardBoxFill,
   RiBookMarkedFill,
+  RiTerminalBoxFill,
 } from "react-icons/ri";
 import EventCard from "./eventCard";
 
 const UpToList = () => {
   const currs = [
     {
+      icon: <RiCarFill />,
+      text: "Software Engineering Intern at Uber",
+      altText: "SWE Intern at Uber", 
+      date: "May 2025 - Present",
+    },
+    {
+      icon: <RiTerminalBoxFill />,
+      text: "Projects Chair for the Aggie Coding Club",
+      altText: "Projects Chair for ACC",
+      date: "April 2025 - Present",
+    },
+    {
       icon: <RiPushpin2Fill />,
       text: "President of the Engineering TA Organization",
-      altText: "President of the ENGR TAO", // Alternative text for smaller screens
+      altText: "President of the ENGR TAO", 
       date: "September 2024 - Present",
     },
     {
@@ -22,18 +36,18 @@ const UpToList = () => {
       date: "August 2024 - Present",
     },
     {
-      icon: <RiKeyboardBoxFill />,
-      text: "Projects Officer for the Aggie Coding Club",
-      altText: "Projects Officer for ACC",
-      date: "February 2024 - Present",
-    },
-    {
       icon: <RiBookMarkedFill />,
       text: "Developer for AggieSeek",
       date: "February 2024 - Present",
     },
   ];
   const prevs = [
+    {
+      icon: <RiKeyboardBoxFill />,
+      text: "Projects Officer for the Aggie Coding Club",
+      altText: "Projects Officer for ACC",
+      date: "February 2024 - Present",
+    },
     {
       icon: <RiCodeBoxFill />,
       text: "Web officer for the Engineering TA Organization",
